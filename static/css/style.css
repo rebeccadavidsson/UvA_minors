@@ -1,0 +1,243 @@
+body, html {
+  background-color: #f2f2f2;
+  margin:auto;
+  padding:0;
+  height: 101%;
+}
+
+a {
+  color:white;
+}
+.card img {
+  padding: 10px 5px 5px 5px;
+  height: 55%;
+  width: 55%;
+  margin: auto;
+  -webkit-filter: brightness(5);
+}
+
+.card {
+  border-radius: 8px;
+  width: 107%;
+}
+
+.card li {
+  font-size: 14px;
+}
+
+.card-text {
+  font-size: 12px;
+}
+
+hr {
+  margin-top:-10px;
+}
+
+#programmeren hr {
+  border: 2px solid firebrick;
+}
+
+#scientific hr {
+  border: 2px solid orange;
+}
+
+#scientific img {
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+
+#AI hr {
+  border: 2px solid gold;
+}
+
+#computational hr {
+  border: 2px solid darkgreen;
+}
+
+#informationsystems hr {
+  border: 2px solid navy;
+}
+
+.row,
+.nav {
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+
+.nav {
+  z-index: 0;
+  width: 100%;
+  height: 270px;
+  background: rgb(24, 24, 24);
+}
+
+
+
+.row {
+  z-index: 10;
+  margin: auto;
+  padding: 3%;
+}
+
+table {
+  width: 80%;
+  font-size: 16px;
+  /* margin-left: 60px; */
+  -webkit-animation: fadeInFromNone 1.0s ease-in;
+  -moz-animation: fadeInFromNone 1.0s ease-in;
+  -o-animation: fadeInFromNone 1.0s ease-in;
+  animation: fadeInFromNone 1.0s ease-in;
+
+}
+
+tr {
+  /* border-bottom: 1px solid darkgrey; */
+}
+td {
+  padding-bottom: 10px;
+}
+
+
+.sem-blocks {
+    position: relative;
+    margin: -10px 0 40px 0;
+    /* width: 56px; */
+    height: 16px;
+}
+
+.sem-blocks img {
+  margin: 0;
+  padding: 0;
+  -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(0%);
+}
+
+.sem-blocks div {
+  position: absolute;
+  top: 0;
+  margin: 0 4px 0 0;
+}
+
+.sem-blocks .block-2 {
+  left: 20px;
+}
+
+.sem-blocks .block-3 {
+  left: 40px;
+}
+
+#containerbelow {
+  padding-left: 0px;
+}
+
+#above {
+  color: white;
+  display: none;
+  background: rgb(24, 24, 24);
+  height: 500px;
+  position: relative;
+}
+
+#above h2 {
+  /* padding: 20px 0px 0px 60px;
+  display: block; */
+
+  -webkit-animation: fadeInFromNone 1.0s ease-in;
+  -moz-animation: fadeInFromNone 1.0s ease-in;
+  -o-animation: fadeInFromNone 1.0s ease-in;
+  animation: fadeInFromNone 1.0s ease-in;
+}
+
+#above p {
+  -webkit-animation: fadeInFromNone 1.0s ease-in;
+  -moz-animation: fadeInFromNone 1.0s ease-in;
+  -o-animation: fadeInFromNone 1.0s ease-in;
+  animation: fadeInFromNone 1.0s ease-in;
+}
+
+#above .row {
+  /* margin-top: 40px; */
+}
+
+
+@-webkit-keyframes fadeInFromNone {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+
+    1% {
+        display: block;
+        opacity: 0;
+    }
+
+    100% {
+        display: block;
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeInFromNone {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+
+    1% {
+        display: block;
+        opacity: 0;
+    }
+
+    100% {
+        display: block;
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadeInFromNone {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+
+    1% {
+        display: block;
+        opacity: 0;
+    }
+
+    100% {
+        display: block;
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInFromNone {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+
+    1% {
+        display: block;
+        opacity: 0;
+    }
+
+    100% {
+        display: block;
+        opacity: 1;
+    }
+}
+
+.studieschemagroup.slideout {
+  display: none;
+}
+
+.vergelijk {
+  position: relative;
+    top: -100px;
+}
+
+#rightcol {
+  /* display: none; */
+}
