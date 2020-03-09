@@ -3,6 +3,7 @@ body, html {
   margin:auto;
   padding:0;
   height: 101%;
+  font-family: Georgia, serif;
 }
 
 a {
@@ -10,19 +11,39 @@ a {
 }
 .card img {
   padding: 10px 5px 5px 5px;
-  height: 55%;
-  width: 55%;
+  height: 45%;
+  width: 45%;
   margin: auto;
   -webkit-filter: brightness(5);
+  cursor: pointer;
 }
 
 .card {
   border-radius: 8px;
   width: 107%;
+  opacity: 1;
+  transition: all 0.5s;
+}
+
+
+.card button {
+  /* margin-top: calc(100% - 200px); */
+  position: relative;
+}
+
+.card.change {
+  opacity: 0.3;
+  transition: all 1.5s;
+}
+
+.card:hover {
+  opacity: 1.0;
+  transition: all 0.4s;
 }
 
 .card li {
   font-size: 14px;
+  color: black;
 }
 
 .card-text {
@@ -68,7 +89,7 @@ hr {
 .nav {
   z-index: 0;
   width: 100%;
-  height: 270px;
+  height: 280px;
   background: rgb(24, 24, 24);
 }
 
@@ -135,14 +156,11 @@ td {
   color: white;
   display: none;
   background: rgb(24, 24, 24);
-  height: 500px;
+  height: calc(100% - 280px);
   position: relative;
 }
 
 #above h2 {
-  /* padding: 20px 0px 0px 60px;
-  display: block; */
-
   -webkit-animation: fadeInFromNone 1.0s ease-in;
   -moz-animation: fadeInFromNone 1.0s ease-in;
   -o-animation: fadeInFromNone 1.0s ease-in;
@@ -156,8 +174,13 @@ td {
   animation: fadeInFromNone 1.0s ease-in;
 }
 
-#above .row {
-  /* margin-top: 40px; */
+#colrightinfo p, ul, ol, li {
+  color: darkgrey;
+}
+
+#colrightinfo {
+  max-height: 450px;
+  overflow-y: scroll;
 }
 
 
@@ -238,6 +261,14 @@ td {
     top: -100px;
 }
 
-#rightcol {
-  /* display: none; */
+#programmereninfo, #cls {
+  display: none;
+}
+
+#programmereninfo tr.studieschema td {
+  padding: 2px;
+}
+
+.card ul > li > p {
+  margin-bottom:2px;
 }
