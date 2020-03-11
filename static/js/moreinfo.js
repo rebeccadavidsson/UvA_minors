@@ -63,50 +63,57 @@ var height = $("#above").outerHeight(); //gets height of header
 function convertName(name) {
   var item;
   if (name == "cls") {
-    item = "computational"
+    item = "computational";
   }
-  else if (name = "programmereninfo") {
-    item = "programmeren"
+  else if (name == "programmereninfo") {
+    item = "programmeren";
   }
+  else if (name == "sc") {
+    item = "scientific";
+  }
+  else if (name == "ai") {
+    item = "AI";
+  }
+  else if (name == "is") {
+    item = "informationsystems";
+  }
+  else {
+    item = ""
+  }
+
   return item
 }
 
 
 $(window).scroll(function(){
 
-  var st = window.pageYOffset || document.documentElement.scrollTop ; // Credits: "https://github.com/qeremy/so/blob/master/so.dom.js#L426"
-  if (st + 5 > lastScrollTop){
-     // downscroll code
-     if($(window).scrollTop() > (270)){
-       document.querySelectorAll(".card").forEach((item, i) => {
-         if (item.id != convertName(selecteditem)) {
-           item.classList.remove('change');
-         }
-       });
-     }
-  } else {
-    document.querySelectorAll(".card").forEach((item, i) => {
-      if (item.id != convertName(selecteditem)) {
-        item.classList.add('change');
-      }
-    });
-     // upscroll code
+  var abovediv = document.querySelector("#above");
+console.log(abovediv.style.display, "HOI");
+  if (abovediv.style.display == "block") {
+
+    var st = window.pageYOffset || document.documentElement.scrollTop ; // Credits: "https://github.com/qeremy/so/blob/master/so.dom.js#L426"
+    if (st + 10 > lastScrollTop){
+       // downscroll code
+       if($(window).scrollTop() > (50)){
+         document.querySelectorAll(".card").forEach((item, i) => {
+
+           if (item.id != convertName(selecteditem)) {
+             item.classList.remove('change');
+           }
+         });
+       }
+    } else {
+      document.querySelectorAll(".card").forEach((item, i) => {
+        if (item.id != convertName(selecteditem)) {
+          item.classList.add('change');
+        }
+      });
+       // upscroll code
+    }
   }
   lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling
 
 });
-
-
-// var cards = document.getElementsByClassName("card");
-//
-// for(var x = 0; x < cards.length; x++) {
-//
-//     cards[x].addEventListener("click",function(el){
-//
-//       console.log(el, "hoi")
-//
-//     },false);
-// }
 
 
 var request;
