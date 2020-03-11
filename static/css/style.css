@@ -10,7 +10,7 @@ a {
   color:white;
 }
 .card img {
-  padding: 10px 5px 5px 5px;
+  padding: 10px 4px 4px 4px;
   height: 45%;
   width: 45%;
   margin: auto;
@@ -20,11 +20,14 @@ a {
 
 .card {
   border-radius: 8px;
-  width: 107%;
+  width: 109%;
   opacity: 1;
   transition: all 0.5s;
 }
 
+.card a{
+  color: darkgrey;
+}
 
 .card button {
   /* margin-top: calc(100% - 200px); */
@@ -32,7 +35,7 @@ a {
 }
 
 .card.change {
-  opacity: 0.3;
+  opacity: 0.5;
   transition: all 1.5s;
 }
 
@@ -98,7 +101,7 @@ hr {
 .row {
   z-index: 10;
   margin: auto;
-  padding: 3%;
+  padding: 2.5%;
 }
 
 table {
@@ -160,6 +163,10 @@ td {
   position: relative;
 }
 
+#above h6 {
+  cursor: pointer;
+}
+
 #above h2 {
   -webkit-animation: fadeInFromNone 1.0s ease-in;
   -moz-animation: fadeInFromNone 1.0s ease-in;
@@ -167,20 +174,35 @@ td {
   animation: fadeInFromNone 1.0s ease-in;
 }
 
-#above p {
+#above .col-6 p, h6, ul, li {
   -webkit-animation: fadeInFromNone 1.0s ease-in;
   -moz-animation: fadeInFromNone 1.0s ease-in;
   -o-animation: fadeInFromNone 1.0s ease-in;
   animation: fadeInFromNone 1.0s ease-in;
 }
 
-#colrightinfo p, ul, ol, li {
+.col.slideinfo p, ul, ol, li, h6 {
   color: darkgrey;
+  -webkit-animation: fadeInFromNone 0s ease-in;
+  -moz-animation: fadeInFromNone 0s ease-in;
+  -o-animation: fadeInFromNone 0s ease-in;
+  animation: fadeInFromNone 0s ease-in;
 }
 
-#colrightinfo {
+.col.slideinfo h6 {
+  color: white;
+}
+
+.col.slideinfo {
   max-height: 450px;
   overflow-y: scroll;
+}
+
+.slideinfocontent p, ul, ol, li{
+  -webkit-animation: fadeInFromNone 0s ease-in;
+  -moz-animation: fadeInFromNone 0s ease-in;
+  -o-animation: fadeInFromNone 0s ease-in;
+  animation: fadeInFromNone 0s ease-in;
 }
 
 
@@ -271,4 +293,83 @@ td {
 
 .card ul > li > p {
   margin-bottom:2px;
+}
+
+.slideinfo .slideinfocontent {
+  display: none;
+  -webkit-animation: fadeInFromNone 0s ease-in;
+  -moz-animation: fadeInFromNone 0s ease-in;
+  -o-animation: fadeInFromNone 0s ease-in;
+  animation: fadeInFromNone 0s ease-in;
+}
+
+.slideinfo.selected .slideinfocontent {
+  display: inline;
+  -webkit-animation: fadeInFromNone 0s ease-in;
+  -moz-animation: fadeInFromNone 0s ease-in;
+  -o-animation: fadeInFromNone 0s ease-in;
+  animation: fadeInFromNone 0s ease-in;
+}
+
+
+@media only screen and (max-width: 600px) {
+  #containerbelow .card {
+    width: 100%;
+    padding-bottom: 10px;
+    opacity: 1.0;
+  }
+  #containerbelow .col {
+    flex: none;
+    padding-bottom: 10px;
+  }
+
+  .card:hover {
+    opacity: 1.0;
+  }
+
+  html, body {
+    background-color: rgb(19, 19, 19);
+
+  }
+}
+
+#rightbar {
+  float: right;
+  background: rgb(24, 24, 24);
+  height: 780px;  /* TODO   */
+  /* width: 20%; */
+  margin-right: -20px;
+  border-bottom-left-radius: 10px;
+}
+
+#rightbar li {
+  background: none;
+  color: white;
+}
+
+#rightbar ul {
+  margin-top:50px;
+}
+
+#overig {
+  background-color: #eaeaea;
+  border: none;
+}
+
+#overig li, ul {
+  background-color: inherit;
+  list-style-type: disc;
+}
+
+
+#overig h6 {
+  color: black;
+}
+
+.dot {
+  height: 8px;
+  width: 8px;
+  background-color: black;
+  border-radius: 50%;
+  display: inline-block;
 }
