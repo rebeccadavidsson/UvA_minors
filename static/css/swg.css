@@ -127,6 +127,7 @@ div.item-info p{
 td,th{
 	border-bottom: 2px solid darkgrey;
 }
+
 tr.slideout td{
 	border-bottom: none;
 }
@@ -328,7 +329,7 @@ ol{
 	list-style-image:none;
 }
 tr.studieschema td {
-padding: 5px;
+padding: 2px;
 }
 a.icon-arrow:not([href]) {
 	color:inherit;

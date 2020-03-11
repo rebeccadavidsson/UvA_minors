@@ -1,19 +1,18 @@
 body, html {
   background-color: #f2f2f2;
-  margin: auto;
-  padding: 0;
+  margin:auto;
+  padding:0;
   height: 101%;
   font-family: Georgia, serif;
 }
 
 a {
-  color: white;
+  color:white;
 }
 
 .col {
   padding-left: 9px;
 }
-
 .card img {
   padding: 10px 4px 4px 4px;
   height: 45%;
@@ -34,8 +33,7 @@ a {
 .card-body {
   padding: 1rem;
 }
-
-.card a {
+.card a{
   color: darkgrey;
 }
 
@@ -50,7 +48,7 @@ a {
 }
 
 .card:hover {
-  opacity: 1;
+  opacity: 1.0;
   transition: all 0.4s;
 }
 
@@ -64,7 +62,7 @@ a {
 }
 
 hr {
-  margin-top: -10px;
+  margin-top:-10px;
 }
 
 #programmeren hr {
@@ -76,8 +74,7 @@ hr {
 }
 
 #scientific img {
-  -webkit-filter: grayscale(100%);
-  /* Safari 6.0 - 9.0 */
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
   filter: grayscale(100%);
 }
 
@@ -104,8 +101,10 @@ hr {
   z-index: 0;
   width: 100%;
   height: 280px;
-  background: #181818;
+  background: rgb(24, 24, 24);
 }
+
+
 
 .row {
   z-index: 10;
@@ -114,34 +113,35 @@ hr {
 }
 
 table {
+  // width: 80%;
   font-size: 16px;
   /* margin-left: 60px; */
-  -webkit-animation: fadeInFromNone 1s ease-in;
-  -moz-animation: fadeInFromNone 1s ease-in;
-  -o-animation: fadeInFromNone 1s ease-in;
-  animation: fadeInFromNone 1s ease-in;
+  -webkit-animation: fadeInFromNone 1.0s ease-in;
+  -moz-animation: fadeInFromNone 1.0s ease-in;
+  -o-animation: fadeInFromNone 1.0s ease-in;
+  animation: fadeInFromNone 1.0s ease-in;
+
 }
 
 tr {
   /* border-bottom: 1px solid darkgrey; */
 }
-
 td {
   padding-bottom: 10px;
 }
 
+
 .sem-blocks {
-  position: relative;
-  margin: -10px 0 40px 0;
-  /* width: 56px; */
-  height: 16px;
+    position: relative;
+    margin: -10px 0 40px 0;
+    /* width: 56px; */
+    height: 16px;
 }
 
 .sem-blocks img {
   margin: 0;
   padding: 0;
-  -webkit-filter: grayscale(0%);
-  /* Safari 6.0 - 9.0 */
+  -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
   filter: grayscale(0%);
 }
 
@@ -170,7 +170,7 @@ td {
 #above {
   color: white;
   display: none;
-  background: #181818;
+  background: rgb(24, 24, 24);
   height: calc(100% - 280px);
   position: relative;
 }
@@ -180,17 +180,17 @@ td {
 }
 
 #above h2 {
-  -webkit-animation: fadeInFromNone 1s ease-in;
-  -moz-animation: fadeInFromNone 1s ease-in;
-  -o-animation: fadeInFromNone 1s ease-in;
-  animation: fadeInFromNone 1s ease-in;
+  -webkit-animation: fadeInFromNone 1.0s ease-in;
+  -moz-animation: fadeInFromNone 1.0s ease-in;
+  -o-animation: fadeInFromNone 1.0s ease-in;
+  animation: fadeInFromNone 1.0s ease-in;
 }
 
 #above .col-6 p, h6, ul, li {
-  -webkit-animation: fadeInFromNone 1s ease-in;
-  -moz-animation: fadeInFromNone 1s ease-in;
-  -o-animation: fadeInFromNone 1s ease-in;
-  animation: fadeInFromNone 1s ease-in;
+  -webkit-animation: fadeInFromNone 1.0s ease-in;
+  -moz-animation: fadeInFromNone 1.0s ease-in;
+  -o-animation: fadeInFromNone 1.0s ease-in;
+  animation: fadeInFromNone 1.0s ease-in;
 }
 
 .col.slideinfo p, ul, ol, li, h6 {
@@ -210,7 +210,7 @@ td {
   overflow-y: scroll;
 }
 
-.slideinfocontent p, ul, ol, li {
+.slideinfocontent p, ul, ol, li{
   color: white;
   -webkit-animation: fadeInFromNone 0s ease-in;
   -moz-animation: fadeInFromNone 0s ease-in;
@@ -218,62 +218,75 @@ td {
   animation: fadeInFromNone 0s ease-in;
 }
 
+
 @-webkit-keyframes fadeInFromNone {
-  0% {
-    display: none;
-    opacity: 0;
-  }
-  1% {
-    display: block;
-    opacity: 0;
-  }
-  100% {
-    display: block;
-    opacity: 1;
-  }
+    0% {
+        display: none;
+        opacity: 0;
+    }
+
+    1% {
+        display: block;
+        opacity: 0;
+    }
+
+    100% {
+        display: block;
+        opacity: 1;
+    }
 }
+
 @-moz-keyframes fadeInFromNone {
-  0% {
-    display: none;
-    opacity: 0;
-  }
-  1% {
-    display: block;
-    opacity: 0;
-  }
-  100% {
-    display: block;
-    opacity: 1;
-  }
+    0% {
+        display: none;
+        opacity: 0;
+    }
+
+    1% {
+        display: block;
+        opacity: 0;
+    }
+
+    100% {
+        display: block;
+        opacity: 1;
+    }
 }
+
 @-o-keyframes fadeInFromNone {
-  0% {
-    display: none;
-    opacity: 0;
-  }
-  1% {
-    display: block;
-    opacity: 0;
-  }
-  100% {
-    display: block;
-    opacity: 1;
-  }
+    0% {
+        display: none;
+        opacity: 0;
+    }
+
+    1% {
+        display: block;
+        opacity: 0;
+    }
+
+    100% {
+        display: block;
+        opacity: 1;
+    }
 }
+
 @keyframes fadeInFromNone {
-  0% {
-    display: none;
-    opacity: 0;
-  }
-  1% {
-    display: block;
-    opacity: 0;
-  }
-  100% {
-    display: block;
-    opacity: 1;
-  }
+    0% {
+        display: none;
+        opacity: 0;
+    }
+
+    1% {
+        display: block;
+        opacity: 0;
+    }
+
+    100% {
+        display: block;
+        opacity: 1;
+    }
 }
+
 .studieschemagroup {
   border-bottom: none !important;
 }
@@ -284,7 +297,7 @@ td {
 
 .vergelijk {
   position: relative;
-  top: -100px;
+    top: -100px;
 }
 
 #programmereninfo, #cls, #sc, #is, #ai {
@@ -296,7 +309,7 @@ td {
 }
 
 .card ul > li > p {
-  margin-bottom: 2px;
+  margin-bottom:2px;
 }
 
 .slideinfo .slideinfocontent {
@@ -315,31 +328,32 @@ td {
   animation: fadeInFromNone 0s ease-in;
 }
 
+
 @media only screen and (max-width: 600px) {
   #containerbelow .card {
     width: 100%;
     padding-bottom: 10px;
-    opacity: 1;
+    opacity: 1.0;
   }
-
   #containerbelow .col {
     flex: none;
     padding-bottom: 10px;
   }
 
   .card:hover {
-    opacity: 1;
+    opacity: 1.0;
   }
 
   html, body {
-    background-color: #131313;
+    background-color: rgb(19, 19, 19);
+
   }
 }
+
 #rightbar {
   float: right;
-  background: #181818;
-  height: 780px;
-  /* TODO   */
+  background: rgb(24, 24, 24);
+  height: 780px;  /* TODO   */
   /* width: 20%; */
   margin-right: -20px;
   border-bottom-left-radius: 10px;
@@ -351,7 +365,7 @@ td {
 }
 
 #rightbar ul {
-  margin-top: 50px;
+  margin-top:50px;
 }
 
 #overig {
@@ -363,6 +377,7 @@ td {
   background-color: inherit;
   list-style-type: disc;
 }
+
 
 #overig h6 {
   color: black;
@@ -393,5 +408,3 @@ td {
 .bottomborder {
   border-bottom: 0px solid darkgrey;
 }
-
-/*# sourceMappingURL=style.css.map */
