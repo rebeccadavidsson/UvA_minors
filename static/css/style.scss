@@ -5,7 +5,7 @@ $bgcolor: #181818;
 }
 
 body, html {
-  background-color: rgb(244, 254, 244);
+  background-color: #f0f0f0;
   margin:auto;
   padding:0;
   height: 101%;
@@ -38,7 +38,7 @@ table a {
 
 .card {
   border-radius: 6px;
-  width: 108%;
+  width: 105%;
   opacity: 1;
   transition: all 0.5s;
   min-height: 100%;
@@ -405,7 +405,11 @@ td {
   margin-top:50px;
 }
 
-
+#overig {
+  margin-top: 20px;
+  margin-left: 1%;
+  margin-bottom: 30px;
+}
 #overig li, ul {
   background-color: inherit;
   list-style-type: disc;
