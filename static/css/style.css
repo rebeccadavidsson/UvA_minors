@@ -1,12 +1,23 @@
+.card {
+  border: none;
+}
+
 body, html {
-  background-color: #f2f2f2;
+  background-color: #f4fef4;
   margin: auto;
   padding: 0;
   height: 101%;
-  font-family: Georgia, serif;
 }
 
 a {
+  color: #7587b3;
+}
+
+a:hover {
+  color: #a2a2a2;
+}
+
+table a {
   color: white;
 }
 
@@ -25,14 +36,18 @@ a {
 
 .card {
   border-radius: 6px;
-  width: 109%;
+  width: 108%;
   opacity: 1;
   transition: all 0.5s;
   min-height: 100%;
 }
 
 .card-body {
-  padding: 1rem;
+  padding: 0.8rem;
+}
+
+.card-body p {
+  font-size: 14px;
 }
 
 .card a {
@@ -168,6 +183,7 @@ td {
 }
 
 #above {
+  font-size: 14px;
   color: white;
   display: none;
   background: #181818;
@@ -177,6 +193,8 @@ td {
 
 #above h6 {
   cursor: pointer;
+  color: white;
+  font-weight: 500;
 }
 
 #above h2 {
@@ -316,6 +334,10 @@ td {
 }
 
 @media only screen and (max-width: 600px) {
+  html, body {
+    background-color: #181818;
+  }
+
   #containerbelow .card {
     width: 100%;
     padding-bottom: 10px;
@@ -331,8 +353,17 @@ td {
     opacity: 1;
   }
 
-  html, body {
-    background-color: #131313;
+  #containerbelow .col {
+    max-width: none;
+  }
+
+  #above {
+    height: 100%;
+    overflow: auto;
+  }
+
+  #above .col {
+    flex-basis: auto;
   }
 }
 #rightbar {
@@ -352,11 +383,6 @@ td {
 
 #rightbar ul {
   margin-top: 50px;
-}
-
-#overig {
-  background-color: white;
-  border: none;
 }
 
 #overig li, ul {
