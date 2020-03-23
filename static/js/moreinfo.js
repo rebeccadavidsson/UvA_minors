@@ -4,15 +4,15 @@ function detectMobile() {
   return check;
 };
 
-window.scrollBy({
-  top: 2,
-  behavior: 'smooth'
-});
-
-window.scrollBy({
-  down: 1,
-  behavior: 'smooth'
-});
+// window.scrollBy({
+//   top: 2,
+//   behavior: 'smooth'
+// });
+//
+// window.scrollBy({
+//   down: 1,
+//   behavior: 'smooth'
+// });
 
 selecteditem = ""
 
@@ -88,7 +88,6 @@ function convertName(name) {
 $(window).scroll(function(){
 
   var abovediv = document.querySelector("#above");
-console.log(abovediv.style.display, "HOI");
   if (abovediv.style.display == "block") {
 
     var st = window.pageYOffset || document.documentElement.scrollTop ; // Credits: "https://github.com/qeremy/so/blob/master/so.dom.js#L426"

@@ -118,7 +118,7 @@ hr {
 .nav {
   z-index: 0;
   width: 100%;
-  height: 280px;
+  height: 260px;
   background: #181818;
 }
 
@@ -187,7 +187,7 @@ td {
   color: white;
   display: none;
   background: #181818;
-  height: calc(100% - 280px);
+  height: calc(100% - 260px);
   position: relative;
 }
 
@@ -424,6 +424,10 @@ td {
 
 .bottomborder {
   border-bottom: 0px solid darkgrey;
+}
+
+.minor-title {
+  height: 100px;
 }
 
 /*# sourceMappingURL=style.css.map */
