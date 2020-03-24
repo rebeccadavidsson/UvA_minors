@@ -13,6 +13,7 @@
     <title>UvA Minors</title>
   </head>
   <body>
+
     <div id="above">
       <div class="row" style="width:100%;" id="cls">
         <div class="col">
@@ -807,168 +808,168 @@
     <div class="container-fluid" style="position:relative;" id="containerbelow">
       <div class="nav"></div>
       <div class="row">
-        <div class="col">
-          <div class="card" id="programmeren">
-            <img class="card-img-top" src="static/images/programmingminor.png" alt="Card image cap" onclick="showinfo('programmereninfo')">
-            <div class="card-body">
-              <hr>
-              <div class="minor-title">
-                <h5 class="card-title">Minor Programmeren</h5>
-              </div>
-              <div class="minor-description">
-                <p>Schrijv je eigen programma's en hulpmiddelen en bouw je eigen websites.</p>
+        <div class="wrapper">
+          <div class="col">
+            <div class="card" id="programmeren">
+              <img class="card-img-top" src="static/images/programmingminor.png" alt="Card image cap" onclick="showinfo('programmereninfo')">
+              <div class="card-body">
+                <hr>
+                <div class="minor-title">
+                  <h5 class="card-title">Minor Programmeren</h5>
+                </div>
+                <div class="minor-description">
+                  <button type="button" class="btn btn-light" name="button" onclick="showinfo('programmereninfo')">Programma</button>
 
+                  <p>Schrijf je eigen programma's en hulpmiddelen en bouw je eigen websites.</p>
+
+                </div>
+
+                  <!-- <p class="card-text">
+                  Voor studenten uit elk vakgebied, met en zonder ervaring, om te leren zelf
+                  programma’s te schrijven. Websites voor het grote publiek, of juist om specialistische kennis over te dragen; snel zelfgeschreven hulpmiddelen waarmee
+                  je grote hoeveelheden data verwerkt of om efficiënt enqueteresultaten te
+                  verzamelen. Je kunt het allemaal leren.
+                </p> -->
               </div>
 
-                <!-- <p class="card-text">
-                Voor studenten uit elk vakgebied, met en zonder ervaring, om te leren zelf
-                programma’s te schrijven. Websites voor het grote publiek, of juist om specialistische kennis over te dragen; snel zelfgeschreven hulpmiddelen waarmee
-                je grote hoeveelheden data verwerkt of om efficiënt enqueteresultaten te
-                verzamelen. Je kunt het allemaal leren.
-              </p> -->
+
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <h6>30 EC</h6>
+                </li>
+                <li class="list-group-item">
+                  Voor studenten uit elk vakgebied.
+                </li>
+                <li class="list-group-item">
+                  <p>&#10003; Fulltime</p>
+                    <p>&#10003; <span style="font-weight:600;">Parttime</span></p>
+                </li>
+                <!-- <li class="list-group-item">
+                  <p>&#10003; Semester 1</p>
+                  <p>&#10003; Semester 2</p>
+                </li> -->
+                <li class="list-group-item">Nog meer info...</li>
+              </ul>
+              <div class="card-body">
+                <a target="_blank" href="https://studiegids.uva.nl/xmlpages/page/2019-2020/zoek-minor/opleiding/5722" target="_blank" class="card-link">Studiegids</a>
+                <a href="#" class="card-link">Link</a>
+              </div>
             </div>
-            <button type="button" class="btn btn-light" name="button" onclick="showinfo('programmereninfo')">Programma</button>
+          </div>
+          <div class="col">
+            <div class="card" id="scientific">
+              <img class="card-img-top" src="static/images/science.png" alt="Card image cap" onclick="showinfo('sc')">
+              <div class="card-body">
+                <hr>
+                <div class="minor-title">
+                    <h5 class="card-title">Scientific Programming (EN)</h5>
+                </div>
+                <div class="minor-description">
+                  <button type="button" class="btn btn-light" name="button" onclick="showinfo('sc')">Programma</button>
 
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">
-                <h6>30 EC</h6>
-              </li>
-              <li class="list-group-item">
-                Voor studenten uit elk vakgebied.
-              </li>
-              <li class="list-group-item">
-                <p>&#10003; Fulltime</p>
+                  <p>Programmeren in Python, gericht op wetenschappelijke applicaties. </p>
+
+                </div>
+
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <h6>12 EC</h6>
+                </li>
+                <li class="list-group-item">
+                  Voor studenten met een wetenschappelijke achtergrond.
+                </li>
+                <li class="list-group-item">
+                  <p>&#10003; Fulltime</p>
                   <p>&#10003; <span style="font-weight:600;">Parttime</span></p>
-              </li>
-              <!-- <li class="list-group-item">
-                <p>&#10003; Semester 1</p>
-                <p>&#10003; Semester 2</p>
-              </li> -->
-              <li class="list-group-item">Nog meer info...</li>
-            </ul>
-            <div class="card-body">
-              <a target="_blank" href="https://studiegids.uva.nl/xmlpages/page/2019-2020/zoek-minor/opleiding/5722" target="_blank" class="card-link">Studiegids</a>
-              <a href="#" class="card-link">Link</a>
+                </li>
+                <!-- <li class="list-group-item">
+                  <p>&#10003; Semester 1</p>
+                  <p>&#10003; Semester 2</p>
+                </li> -->
+                <li class="list-group-item">Nog meer info...</li>
+              </ul>
+              <div class="card-body">
+                <a href="https://www.mprog.nl/scientific/" target="_blank" class="card-link">Studiegids (TODO)</a>
+                <a href="#" class="card-link">Link</a>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col">
-          <div class="card" id="scientific">
-            <img class="card-img-top" src="static/images/science.png" alt="Card image cap" onclick="showinfo('sc')">
-            <div class="card-body">
-              <hr>
-              <div class="minor-title">
-                  <h5 class="card-title">Scientific Programming (EN)</h5>
+          <div class="col">
+            <div class="card" id="AI">
+              <img class="card-img-top" src="static/images/AI.png" alt="Card image cap" onclick="showinfo('ai')">
+              <div class="card-body">
+                <hr>
+                <div class="minor-title">
+                  <h5 class="card-title">Minor Artificial intelligence (NL)</h5>
+                </div>
+                  <div class="minor-description">
+                <button type="button" class="btn btn-light" name="button" onclick="showinfo('ai')">Programma</button>
+
+                <p>Voor 25 personen... TODO</p>
               </div>
-              <div class="minor-description">
-                <p>Programmeren in Python, gericht op wetenschappelijke applicaties. </p>
 
               </div>
-
-            </div>
-            <button type="button" class="btn btn-light" name="button" onclick="showinfo('sc')">Programma</button>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">
-                <h6>12 EC</h6>
-              </li>
-              <li class="list-group-item">
-                Voor studenten met een wetenschappelijke achtergrond.
-              </li>
-              <li class="list-group-item">
-                <p>&#10003; Fulltime</p>
-                <p>&#10003; <span style="font-weight:600;">Parttime</span></p>
-              </li>
-              <!-- <li class="list-group-item">
-                <p>&#10003; Semester 1</p>
-                <p>&#10003; Semester 2</p>
-              </li> -->
-              <li class="list-group-item">Nog meer info...</li>
-            </ul>
-            <div class="card-body">
-              <a href="https://www.mprog.nl/scientific/" target="_blank" class="card-link">Studiegids (TODO)</a>
-              <a href="#" class="card-link">Link</a>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card" id="AI">
-            <img class="card-img-top" src="static/images/AI.png" alt="Card image cap" onclick="showinfo('ai')">
-            <div class="card-body">
-              <hr>
-              <div class="minor-title">
-                <h5 class="card-title">Minor Artificial intelligence (NL)</h5>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <h6>30 EC</h6>
+                </li>
+                <li class="list-group-item">
+                  Voor studenten van ...
+                </li>
+                <li class="list-group-item">
+                  <p>&#10003; Fulltime</p>
+                  <p>&#10007; Parttime</p>
+                </li>
+                <!-- <li class="list-group-item">
+                  <p>&#10003; Semester 1 ?</p>
+                  <p>&#10003; Semester 2 ?</p>
+                </li> -->
+                <li class="list-group-item">Nog meer info...</li>
+              </ul>
+              <div class="card-body">
+                <a href="#" class="card-link">Studiegids (TODO)</a>
+                <a href="#" class="card-link">Link</a>
               </div>
-              <p>Voor 25 personen... TODO</p>
-            <br>
-            </div>
-            <button type="button" class="btn btn-light" name="button" onclick="showinfo('ai')">Programma</button>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">
-                <h6>30 EC</h6>
-              </li>
-              <li class="list-group-item">
-                Voor studenten van ...
-              </li>
-              <li class="list-group-item">
-                <p>&#10003; Fulltime</p>
-                <p>&#10007; Parttime</p>
-              </li>
-              <!-- <li class="list-group-item">
-                <p>&#10003; Semester 1 ?</p>
-                <p>&#10003; Semester 2 ?</p>
-              </li> -->
-              <li class="list-group-item">Nog meer info...</li>
-            </ul>
-            <div class="card-body">
-              <a href="#" class="card-link">Studiegids (TODO)</a>
-              <a href="#" class="card-link">Link</a>
             </div>
           </div>
-        </div>
-        <div class="col">
-          <div class="card" id="computational">
-            <img class="card-img-top" src="static/images/computational.png" alt="Card image cap" onclick="showinfo('cls')">
-            <div class="card-body">
-              <hr>
-              <div class="minor-title">
-                <h5 class="card-title">Minor Computational Science</h5>
-
+          <div class="col">
+            <div class="card" id="computational">
+              <img class="card-img-top" src="static/images/computational.png" alt="Card image cap" onclick="showinfo('cls')">
+              <div class="card-body">
+                <hr>
+                <div class="minor-title">
+                  <h5 class="card-title">Minor Computational Science</h5>
+                </div>
+                <div class="minor-description">
+                <button type="button" class="btn btn-light" name="button" onclick="showinfo('cls')">Programma</button>
+                <p>Programmeer computermodellen en simulaties van complexe problemen.</p>
+                </div>
               </div>
-              <p>Programmeer computermodellen en simulaties van complexe problemen.</p>
-              <!-- <p class="card-text">
-                Computational Science wil met behulp van modellen en simulaties de
-                complexe wereld waarin we leven doorgronden.
-                Door het verzamelen van gegevens en het maken van computermodellen
-                kunnen uiteenlopende problemen voorspeld worden, zoals: hoe beïnvloed je de doorstroming van verkeer, hoe voorkom
-                je een economische crisis, of hoe groeit een embryo uit tot organisme.
-              </p> -->
-            </div>
-            <button type="button" class="btn btn-light" name="button" onclick="showinfo('cls')">Programma</button>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">
-                <h6>30 EC</h6>
-              </li>
-              <li class="list-group-item">
-                Interessant voor bètastudenten.
-                <br><br><br>
-              </li>
-              <li class="list-group-item">
-                <p>&#10003; Fulltime</p>
-                <p>&#10007; Parttime</p>
-              </li>
-              <!-- <li class="list-group-item">
-                <p>&#10003; Semester 1</p>
-                <p>&#10007; Semester 2</p>
-              </li> -->
-              <li class="list-group-item">Nog meer info...</li>
-            </ul>
-            <div class="card-body">
-              <a target="_blank" href="https://studiegids.uva.nl/xmlpages/page/2019-2020/zoek-minor/opleiding/5718" target="_blank" class="card-link">Studiegids</a>
-              <a href="#" class="card-link">Link</a>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <h6>30 EC</h6>
+                </li>
+                <li class="list-group-item">
+                  Interessant voor bètastudenten.
+                </li>
+                <li class="list-group-item">
+                  <p>&#10003; Fulltime</p>
+                  <p>&#10007; Parttime</p>
+                </li>
+                <!-- <li class="list-group-item">
+                  <p>&#10003; Semester 1</p>
+                  <p>&#10007; Semester 2</p>
+                </li> -->
+                <li class="list-group-item">Nog meer info...</li>
+              </ul>
+              <div class="card-body">
+                <a target="_blank" href="https://studiegids.uva.nl/xmlpages/page/2019-2020/zoek-minor/opleiding/5718" target="_blank" class="card-link">Studiegids</a>
+                <a href="#" class="card-link">Link</a>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col">
+          <div class="col">
           <div class="card" id="informationsystems">
             <img class="card-img-top" src="static/images/informationsystems.png" alt="Card image cap" onclick="showinfo('is')">
             <div class="card-body">
@@ -976,17 +977,13 @@
               <div class="minor-title">
                   <h5 class="card-title">Minor Information Systems</h5>
               </div>
+              <div class="minor-description">
+
+              <button type="button" class="btn btn-light" name="button" onclick="showinfo('is')">Programma</button>
+
               <p>Bestuderen van het creëren, onderhouden, en ontsluiten van informatie.</p>
-              <!-- <br><br> -->
-              <!-- <p class="card-text">
-                Deze minor is interessant voor studenten met een achtergrond in communicatiewetenschap,
-                nieuwe media, cultuur en informatiewetenschappen. In de minor bestudeer je het creëren,
-                analyseren, onderhouden, en ontsluiten van informatie in verschillende vormen, variërend
-                van tekstuele informatie tot algemene perceptie. De verbanden tussen deze onderwerpen
-                worden vanuit een multidisciplinaire invalshoek bestudeerd.
-              </p> -->
-            </div>
-            <button type="button" class="btn btn-light" name="button" onclick="showinfo('is')">Programma</button>
+              </div>
+              </div>
             <ul class="list-group list-group-flush">
               <li class="list-group-item">
                 <h6>30 EC</h6></li>
@@ -1012,22 +1009,15 @@
             </div>
           </div>
         </div>
-        <!-- <div class="col"> -->
-          <!-- <div class="" id="rightbar">
-            <ul>
-              <li class="list-group-item">Minor KI</li>
-              <li class="list-group-item">Minor Informatica</li>
-              <li class="list-group-item">Minor Logic and Computation</li>
-              <li class="list-group-item">Minor Data Science</li>
-            </ul>
-          </div> -->
+        </div>
+        <div class="col" id="overigcol">
           <div class="card" id="overig">
             <div class="card-body">
               <h5 class="card-title">Overige minoren</h5>
               <p class="card-text"></p>
             </div>
             <ul class="list-group list-group-flush">
-              <hr>
+
               <li class="list-group-item">
 
                 <h6><span class="dot"></span> Minor KI</h6>
@@ -1055,11 +1045,10 @@
               </li>
             </ul>
           </div>
-        <!-- </div> -->
         </div>
-
       </div>
     </div>
+    <!-- </div> -->
 
     <!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script> -->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>

@@ -1,9 +1,6 @@
 $bgcolor: #181818;
 $divheight: 260px;
 
-.card {
-  border: none;
-}
 
 body, html {
   background-color: #f0f0f0;
@@ -42,7 +39,8 @@ table a {
   width: 105%;
   opacity: 1;
   transition: all 0.5s;
-  min-height: 100%;
+  border: none;
+  // min-height: 100%;
 }
 
 .card-body {
@@ -57,9 +55,10 @@ table a {
   color: darkgrey;
 }
 
-.card button {
-  /* margin-top: calc(100% - 200px); */
+
+.btn {
   position: relative;
+  width: 100%;
 }
 
 .card.change {
@@ -85,12 +84,18 @@ hr {
   margin-top:-10px;
 }
 
+.wrapper {
+  display: flex;
+}
+
 #programmeren hr {
-  border: 2px solid firebrick;
+  border: 1px solid firebrick;
+  background: firebrick;
 }
 
 #scientific hr {
-  border: 2px solid orange;
+  border: 1px solid orange;
+  background: orange;
 }
 
 #scientific img {
@@ -99,15 +104,18 @@ hr {
 }
 
 #AI hr {
-  border: 2px solid gold;
+  border: 1px solid gold;
+  background: gold;
 }
 
 #computational hr {
-  border: 2px solid darkgreen;
+  border: 1px solid darkgreen;
+  background: darkgreen;
 }
 
 #informationsystems hr {
-  border: 2px solid navy;
+  border: 1px solid navy;
+  background: navy;
 }
 
 .row,
@@ -184,7 +192,8 @@ td {
 }
 
 #containerbelow .col {
-  max-width: 300px;
+  max-width: calc(100% - 50px);
+  margin-top:10px;
 }
 
 #above {
@@ -192,7 +201,7 @@ td {
   color: white;
   display: none;
   background: $bgcolor;
-  height: calc(100% - 260px);
+  height: calc(100% - 270px);
   position: relative;
 }
 
@@ -352,8 +361,16 @@ td {
   animation: fadeInFromNone 0s ease-in;
 }
 
+.minor-title {
+  min-height: 80px;
+}
 
-@media only screen and (max-width: 600px) {
+
+.minor-description {
+  min-height: 100px;
+}
+
+@media only screen and (max-width: 800px) {
 
   html, body {
     background-color: $bgcolor;
@@ -365,12 +382,42 @@ td {
     opacity: 1.0;
   }
   #containerbelow .col {
-    flex: none;
     padding-bottom: 10px;
+  }
+
+  .wrapper {
+    display: block;
+  }
+
+  hr {
+    display: none;
   }
 
   .card:hover {
     opacity: 1.0;
+  }
+
+  .card img {
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    right: 5%;
+  }
+
+  .card-title {
+    margin-bottom: 1.85rem;
+  }
+
+  .minor-title, .minor-description {
+    min-height: 0px;
+  }
+
+  .card-body {
+    margin-top: -5px;
+  }
+
+  #overig .card-body {
+    margin-top: 0px;
   }
 
   #containerbelow .col {
@@ -388,29 +435,11 @@ td {
 
 }
 
-#rightbar {
-  float: right;
-  background: $bgcolor;
-  height: 780px;  /* TODO   */
-  /* width: 20%; */
-  margin-right: -20px;
-  border-bottom-left-radius: 10px;
-}
-
-#rightbar li {
-  background: none;
-  color: white;
-}
-
-#rightbar ul {
-  margin-top:50px;
-}
 
 #overig {
-  margin-top: 20px;
-  margin-left: 1%;
-  margin-bottom: 30px;
+  flex-direction: row;
 }
+
 #overig li, ul {
   background-color: inherit;
   list-style-type: disc;
@@ -419,6 +448,17 @@ td {
 
 #overig h6 {
   color: black;
+}
+
+#overig.card {
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+#overig .card-body {
+  max-width: 200px;
+  background: #dddddd;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
 }
 
 .dot {
@@ -445,8 +485,4 @@ td {
 
 .bottomborder {
   border-bottom: 0px solid darkgrey;
-}
-
-.minor-title {
-  height: 100px;
 }
