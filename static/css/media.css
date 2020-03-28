@@ -1,0 +1,127 @@
+
+@media only screen and (max-width: 800px) {
+
+  html, body {
+    background-color: $bgcolor;
+  }
+
+  #overzicht .card {
+    width: 100%;
+    padding-bottom: 10px;
+    opacity: 1.0;
+  }
+  #overzicht .col {
+    padding-bottom: 10px;
+  }
+
+  .wrapper {
+    display: block;
+  }
+
+  hr {
+    display: none;
+  }
+
+  .card:hover {
+    opacity: 1.0;
+  }
+
+  .card img {
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    right: 5%;
+  }
+
+  .card-title {
+    margin-bottom: 1.85rem;
+  }
+
+  #overig .card-body {
+    margin-top: 0px;
+  }
+
+  #overzicht .col {
+    max-width: none;
+  }
+
+  #above {
+    height: 100%;
+      overflow: auto;
+  }
+
+  #above .col {
+    flex-basis:auto;
+  }
+
+}
+
+
+
+@-webkit-keyframes fadeInFromNone {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+
+    1% {
+        display: block;
+        opacity: 0;
+    }
+
+    100% {
+        display: block;
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeInFromNone {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+
+    1% {
+        display: block;
+        opacity: 0;
+    }
+
+    100% {
+        display: block;
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadeInFromNone {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+
+    1% {
+        display: block;
+        opacity: 0;
+    }
+
+    100% {
+        display: block;
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInFromNone {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+
+    1% {
+        display: block;
+        opacity: 0;
+    }
+
+    100% {
+        display: block;
+        opacity: 1;
+    }
+}

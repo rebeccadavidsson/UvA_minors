@@ -1,0 +1,88 @@
+
+#programmeren .minor-title {
+  /* margin-bottom: 40px; */
+}
+
+#programmeren hr {
+  border: 1px solid firebrick;
+  background: firebrick;
+}
+
+#scientific hr {
+  border: 1px solid maroon;
+  background: maroon;
+}
+
+#scientific img {
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+
+#AI hr {
+  border: 1px solid gold;
+  background: gold;
+}
+
+#computational hr {
+  border: 1px solid orange;
+  background: orange;
+}
+
+#informationsystems hr {
+  border: 1px solid navy;
+  background: navy;
+}
+
+#KI hr, #datascience hr {
+  margin: 2% 0px 3% 0px;
+  background: gold;
+  border: 1px solid gold;
+}
+
+
+#overzicht {
+  padding-left: 0px;
+}
+
+#overzicht .col {
+  max-width: calc(100% - 50px);
+  margin-top:10px;
+}
+
+#above {
+  font-size: 14px;
+  color: white;
+  display: none;
+  background: $bgcolor;
+  height: calc(100% - 270px);
+  position: relative;
+}
+
+#above h6 {
+  cursor: pointer;
+  color: white;
+  font-weight: 500;
+  // margin-left: 6px;
+}
+
+#above h2 {
+  -webkit-animation: fadeInFromNone 1.0s ease-in;
+  -moz-animation: fadeInFromNone 1.0s ease-in;
+  -o-animation: fadeInFromNone 1.0s ease-in;
+  animation: fadeInFromNone 1.0s ease-in;
+}
+
+#above .col-6 p, h6, ul, li {
+  -webkit-animation: fadeInFromNone 1.0s ease-in;
+  -moz-animation: fadeInFromNone 1.0s ease-in;
+  -o-animation: fadeInFromNone 1.0s ease-in;
+  animation: fadeInFromNone 1.0s ease-in;
+}
+
+#datascience h6.card-title, #KI h6.card-title {
+  color: black;
+}
+
+#datascience p, #KI p {
+  font-size: 12px;
+}

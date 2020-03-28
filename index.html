@@ -7,805 +7,22 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/css/individual.css">
     <link rel="stylesheet" href="static/css/style.css">
     <link rel="stylesheet" href="static/css/swg.css">
+    <link rel="stylesheet" href="static/css/media.css">
 
-    <title>UvA Minors</title>
+    <title>Leren programmeren bij de UvA</title>
   </head>
   <body>
-
-    <div id="above">
-      <div class="row" style="width:100%;" id="cls">
-        <div class="col">
-          <h2>Minor Computational Science</h2>
-          <p style="font-size: 18px;">Programma</p>
-          <table>
-            <tbody>
-                <tr>
-                    <th></th>
-                    <th style="width:60px" class="sem1">Sem. 1</th>
-                    <th style="width:60px" class="sem2">Sem. 2</th>
-                    <th style="width:30px" class="ec">EC</th>
-                </tr>
-                <tr class="studieschema">
-                    <td><a target="_blank" href="https://studiegids.uva.nl/xmlpages/page/2019-2020/zoek-vak/vak/72961" class="icon-arrow">Programmeren IK</a></td>
-                    <td class="sem1">
-                        <div class="sem-blocks"><img src="static/images/grey-blocks.png" alt="" width="56" height="16">
-                            <div class="block-1 red"><img src="static/images/red-block.png" alt="" width="16" height="16"></div>
-                        </div>
-                    </td>
-                    <td class="sem2">
-                        <div class="sem-blocks"><img src="static/images/grey-blocks.png" alt="" width="56" height="16">
-                            <div class="hide red"><img src="static/images/red-block.png" alt="" width="16" height="16"></div>
-                        </div>
-                    </td>
-                    <td class="ec">6</td>
-                </tr>
-                <tr class="studieschema">
-                    <td><a target="_blank" href="https://studiegids.uva.nl/xmlpages/page/2019-2020/zoek-vak/vak/73152" class="icon-arrow">Modelling and Simulation</a></td>
-                    <td class="sem1">
-                        <div class="sem-blocks"><img src="static/images/grey-blocks.png" alt="" width="56" height="16">
-                            <div class="block-2 red"><img src="static/images/red-block.png" alt="" width="16" height="16"></div>
-                        </div>
-                    </td>
-                    <td class="sem2">
-                        <div class="sem-blocks"><img src="static/images/grey-blocks.png" alt="" width="56" height="16">
-                            <div class="hide red"><img src="static/images/red-block.png" alt="" width="16" height="16"></div>
-                        </div>
-                    </td>
-                    <td class="ec">6</td>
-                </tr>
-                <tr class="studieschema">
-                    <td><a target="_blank" href="https://studiegids.uva.nl/xmlpages/page/2019-2020/zoek-vak/vak/73262" class="icon-arrow">Scientific Data Analysis</a></td>
-                    <td class="sem1">
-                        <div class="sem-blocks"><img src="static/images/grey-blocks.png" alt="" width="56" height="16">
-                            <div class="block-2 red"><img src="static/images/red-block.png" alt="" width="16" height="16"></div>
-                        </div>
-                    </td>
-                    <td class="sem2">
-                        <div class="sem-blocks"><img src="static/images/grey-blocks.png" alt="" width="56" height="16">
-                            <div class="hide red"><img src="static/images/red-block.png" alt="" width="16" height="16"></div>
-                        </div>
-                    </td>
-                    <td class="ec">6</td>
-                </tr>
-                <tr class="studieschema">
-                    <td><a target="_blank" href="https://studiegids.uva.nl/xmlpages/page/2019-2020/zoek-vak/vak/73051" class="icon-arrow">Project Computational Science</a></td>
-                    <td class="sem1">
-                        <div class="sem-blocks"><img src="static/images/grey-blocks.png" alt="" width="56" height="16">
-                            <div class="block-3 red"><img src="static/images/red-block.png" alt="" width="16" height="16"></div>
-                        </div>
-                    </td>
-                    <td class="sem2">
-                        <div class="sem-blocks"><img src="static/images/grey-blocks.png" alt="" width="56" height="16">
-                            <div class="hide red"><img src="static/images/red-block.png" alt="" width="16" height="16"></div>
-                        </div>
-                    </td>
-                    <td class="ec">6</td>
-                </tr>
-                <tr class="studieschema studieschemagroup result selected">
-                    <td><a class="icon-arrow" href="#">Vrije keuze: Aangeraden keuzevakken</a></td>
-                    <td class="sem1">
-                        <div class="sem-blocks"><img src="static/images/grey-blocks.png" alt="" width="56" height="16">
-                            <div class="block-1 yellow"><img src="static/images/yellow-block.png" alt="" width="16" height="16"></div>
-                        </div>
-                    </td>
-                    <td class="sem2">
-                        <div class="sem-blocks"><img src="static/images/grey-blocks.png" alt="" width="56" height="16">
-                            <div class="hide yellow"><img src="static/images/yellow-block.png" alt="" width="16" height="16"></div>
-                        </div>
-                    </td>
-                    <td class="ec">0</td>
-                </tr>
-                <tr class="studieschemagroup slideout" id="clsslideout" style="">
-                    <td colspan="4">
-                        <div class="item-info">
-                            <table>
-                                <tbody>
-                                    <tr class="studieschema">
-                                        <td><a target="_blank" href="https://studiegids.uva.nl/xmlpages/page/2019-2020/zoek-vak/vak/72864" class="icon-arrow">Basiswiskunde</a></td>
-                                        <td class="sem1">
-                                            <div class="sem-blocks"><img src="static/images/grey-blocks.png" alt="" width="56" height="16">
-                                                <div class="block-1 red"><img src="static/images/red-block.png" alt="" width="16" height="16"></div>
-                                            </div>
-                                        </td>
-                                        <td class="sem2">
-                                            <div class="sem-blocks"><img src="static/images/grey-blocks.png" alt="" width="56" height="16">
-                                                <div class="hide red"><img src="static/images/red-block.png" alt="" width="16" height="16"></div>
-                                            </div>
-                                        </td>
-                                        <td class="ec">6</td>
-                                    </tr>
-                                    <tr class="studieschema">
-                                        <td><a target="_blank" href="https://studiegids.uva.nl/xmlpages/page/2019-2020/zoek-vak/vak/72729" class="icon-arrow">Keerpunten in de Natuurwetenschappen</a></td>
-                                        <td class="sem1">
-                                            <div class="sem-blocks"><img src="static/images/grey-blocks.png" alt="" width="56" height="16">
-                                                <div class="block-1 red"><img src="static/images/red-block.png" alt="" width="16" height="16"></div>
-                                            </div>
-                                        </td>
-                                        <td class="sem2">
-                                            <div class="sem-blocks"><img src="static/images/grey-blocks.png" alt="" width="56" height="16">
-                                                <div class="hide red"><img src="static/images/red-block.png" alt="" width="16" height="16"></div>
-                                            </div>
-                                        </td>
-                                        <td class="ec">6</td>
-                                    </tr>
-                                    <tr class="studieschema">
-                                        <td><a target="_blank" href="https://studiegids.uva.nl/xmlpages/page/2019-2020/zoek-vak/vak/71247" class="icon-arrow">Mathematics 1: Calculus</a></td>
-                                        <td class="sem1">
-                                            <div class="sem-blocks"><img src="static/images/grey-blocks.png" alt="" width="56" height="16">
-                                                <div class="block-1 red"><img src="static/images/red-block.png" alt="" width="16" height="16"></div>
-                                            </div>
-                                        </td>
-                                        <td class="sem2">
-                                            <div class="sem-blocks"><img src="static/images/grey-blocks.png" alt="" width="56" height="16">
-                                                <div class="hide red"><img src="static/images/red-block.png" alt="" width="16" height="16"></div>
-                                            </div>
-                                        </td>
-                                        <td class="ec">6</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        </div>
-        <div class="col">
-          <div class="slideinfo selected">
-              <h6>&nbsp &nbsp Doelgroep</h6>
-            <div class="slideinfocontent">
-              <p>Bètastudenten, in het bijzonder biologie, biomedische wetenschappen, natuurkunde, sterrenkunde, scheikunde, maar ook economie. Nadrukkelijk niet voor informatici vanwege de overlap van enkele vakken met het bachelor informatica curriculum. Ook studenten van andere opleidingen doen er goed aan bij de examencommissie van hun opleiding te verifiëren of deze minor als invulling van de keuzeruimte geaccepteerd kan worden, in het bijzonder als vakken in deze minor inhoudelijk overlappen met andere vakken.</p>
-            </div>
-          </div>
-          <div class="slideinfo">
-              <h6>&nbsp &nbsp Aanmelden en toelating</h6>
-            <div class="slideinfocontent">
-              <p>Er worden geen eisen aan je voorkennis gesteld; je kan de minor in het eerste semester van je tweede of derde studiejaar volgen. Maar als je deze minor wilt toepassen op je eigen vakgebied, dan is het verstandig deze minor in je derde jaar te volgen.</p>
-              <p><i>Minor aanmelding
-              </i></p>
-              <ul class="bullets-outside"><li>Meld je aan bij de coordinator van deze minor door het invullen van dit formulier:&nbsp;<a href="https://docs.google.com/forms/d/1XNrg_hrkjGTd7O5Sc0JDPH9RjyE1GKuTjKgE6LD6Wdw/viewform" target="_blank">Aanmeldingsformulier Minor Computational Science</a>&nbsp;</li></ul>
-              <p><i>Vak- en tentamenaanmelding&nbsp;
-              </i></p>
-              <ol class="decimal-outside"><li>Als je toegelaten bent moet je je&nbsp;<b>a)</b>&nbsp;voor de minor zelf in SIS aanmelden (het studiegidsnummer van de Minor Computational Science is&nbsp;<b>5062COS30M</b>)&nbsp;en moet je je vervolgens ook&nbsp;<b>b)</b>&nbsp;per vak apart in SIS aanmelden</li><li>Om je aan te melden voor de vakken en voor de Minor zelf zie&nbsp;<a href="http://student.uva.nl/inc/az/item/vakaanmelding.html" target="_blank">de webpagina van de bacheloropleiding Informatica</a>&nbsp;.</li><li>Aanmelding voor het vak is inclusief tentamen en eventueel hertentamen.</li><li><i>Aanmelden als bijvakstudent; </i>Studenten van buiten de UvA moeten zich, voorafgaand aan de inschrijving bij de opleiding, eerst als bijvakstudent registreren. Zie het 'Stappenplan aanmelden bijvak' op de <a href="http://www.uva.nl/onderwijs/overig-onderwijs/bijvakken/bijvakken.html" target="_blank">UvA bijvak-pagina</a> voor meer informatie. Voor toelating tot de Minor Computational Science zijn dezelfde toelatingseisen van kracht als voor de bacheloropleiding Informatica. Let op dat dit Wiskunde B op VWO niveau inhoudt.</li></ol>
-            </div>
-            </div>
-            <div class="slideinfo">
-              <h6>&nbsp &nbsp Opmerkingen</h6>
-              <div class="slideinfocontent">
-                    <p>Veelgestelde vragen
-                    </p>
-                    <p><i>- Hoe zit het onderwijs in elkaar?
-                </i></p>
-                    <p>Deze minor bestaat uit colleges, werkcolleges en een project. Naast colleges door ervaren UvA docenten gebruiken we bij Programmeren ook videocolleges van gerenommeerde Amerikaanse universiteiten (o.a. Harvard en MIT).
-                    </p>
-                    <p><i>- Hoe word ik begeleid?
-                </i></p>
-                    <p>Tijdens de contacturen zijn er altijd assistenten en/of docenten aanwezig om je verder te helpen en vragen te beantwoorden. Niet alleen over de opdrachten, maar ook over de stof uit de hoorcolleges.
-                    </p>
-                    <p><i>- Hoe is de roostering?
-                </i></p>
-                    <p>We roosteren minimaal 6 verplichte contacturen per week voor elk 6-punts vak. De overige uren heb je hard nodig om je opdrachten zelfstandig af te maken. De vakken vragen veel praktijkoefening en daarom kunnen die vakken je zó 20 tot 25 uur per week kosten. Onderschat dit niet. Als je de minor volgt in je vrije keuzeruimte en je volgt er niet meer dan één vak bij, dan moet het zeker te doen zijn!
-                        <br>Roosters zijn te vinden via&nbsp;<a href="https://www.datanose.nl/" target="_blank">https://www.datanose.nl/</a></p>
-                    <p><i>- Kan ik met deze minor instromen in een master computational science?
-                </i></p>
-                    <p>De minor bied je de gelegenheid om aan eventuele deficiënties te werken en daardoor verhoog je je kansen om toegelaten te worden tot de master Computational Science. Indien je de volledige minor succesvol afrondt dan voldoe je automatisch aan de toelatingseisen van de master Computational Science en betekent dit een gegarandeerde toelating tot de master. Mocht je nog vragen hebben dan kun je contact opnemen met de studieadviseur van de opleiding.
-                    </p>
-                    <p><b>-&nbsp;</b><i>Hoe meld ik me aan?
-                </i></p>
-                    <p>Aanmelden doe je door het invullen van&nbsp;<a href="https://docs.google.com/forms/d/1XNrg_hrkjGTd7O5Sc0JDPH9RjyE1GKuTjKgE6LD6Wdw/viewform" target="_blank">dit formulier</a></p>
-                    <p>Let op: als je geaccepteerd bent moet je je ook voor de minor zelf aanmelden en je je per vak apart in SIS inschrijven (zie&nbsp;<a href="http://student.uva.nl/inc/shared/studentensites/fnwi/iw-gedeelde-content/nl/az/vakaanmelding/vakaanmelding.html?origin=9BRcrfLZQvio0OPMpB93rw" target="_blank">Vakaanmelding</a>).
-                    </p>
-                    <p><b>-&nbsp;</b><i>Geen UvA student: hoe meld ik me aan?
-                </i></p>
-                    <p>Studenten van buiten de UvA moeten zich, voorafgaand aan de inschrijving bij de opleiding, eerst als&nbsp;<b>bijvakstudent</b>&nbsp;registreren via&nbsp;<a href="http://info.studielink.nl/nl/studenten/Pages/Default.aspx" target="_blank">http://info.studielink.nl/nl/studenten/Pages/Default.aspx</a></p>
-              </div>
-          </div>
-        </div>
-      </div>
-      <div class="row" style="width:100%;" id="programmereninfo">
-        <div class="col">
-          <h2>Minor Programmeren</h2>
-          <!-- <span style="font-size: 18px;">Programma</span> -->
-          <table>
-              <tbody>
-                <tr>
-                    <th> Fulltime</th>
-                    <th style="width:60px" class="sem1">Sem. 1</th>
-                    <th style="width:60px" class="sem2">Sem. 2</th>
-                    <th style="width:30px" class="ec">EC</th>
-                </tr>
-                  <tr class="studieschema">
-                      <td><a target="_blank" href="https://studiegids.uva.nl/xmlpages/page/2019-2020/zoek-vak/vak/73204" class="icon-arrow">Fulltime Programmeren 1</a></td>
-                      <td class="sem1">
-                          <div class="sem-blocks"><img src="static/images/grey-blocks.png" alt="" width="56" height="16">
-                              <div class="block-1 red"><img src="static/images/red-block.png" alt="" width="16" height="16"></div>
-                              <div class="hide red"><img src="static/images/red-block.png" alt="" width="16" height="16"></div>
-                          </div>
-                      </td>
-                      <td class="sem2">
-                          <div class="sem-blocks"><img src="static/images/grey-blocks.png" alt="" width="56" height="16">
-                              <div class="hide red"><img src="static/images/red-block.png" alt="" width="16" height="16"></div>
-                              <div class="block-1 red"><img src="static/images/red-block.png" alt="" width="16" height="16"></div>
-                          </div>
-                      </td>
-                      <td class="ec">6</td>
-                  </tr>
-                  <tr class="studieschema">
-                      <td><a target="_blank" href="https://studiegids.uva.nl/xmlpages/page/2019-2020/zoek-vak/vak/73205" class="icon-arrow">Fulltime Programmeren 2</a></td>
-                      <td class="sem1">
-                          <div class="sem-blocks"><img src="static/images/grey-blocks.png" alt="" width="56" height="16">
-                              <div class="hide red"><img src="static/images/red-block.png" alt="" width="16" height="16"></div>
-                              <div class="block-1 red"><img src="static/images/red-block.png" alt="" width="16" height="16"></div>
-                          </div>
-                      </td>
-                      <td class="sem2">
-                          <div class="sem-blocks"><img src="static/images/grey-blocks.png" alt="" width="56" height="16">
-                              <div class="block-1 red"><img src="static/images/red-block.png" alt="" width="16" height="16"></div>
-                              <div class="hide red"><img src="static/images/red-block.png" alt="" width="16" height="16"></div>
-                          </div>
-                      </td>
-                      <td class="ec">6</td>
-                  </tr>
-
-                  <tr class="studieschema">
-                      <td><a target="_blank" href="https://studiegids.uva.nl/xmlpages/page/2019-2020/zoek-vak/vak/73624" class="icon-arrow">Fulltime Web App Studio</a></td>
-                      <td class="sem1">
-                          <div class="sem-blocks"><img src="static/images/grey-blocks.png" alt="" width="56" height="16">
-                              <div class="block-2 red"><img src="static/images/red-block.png" alt="" width="16" height="16"></div>
-                              <div class="hide red"><img src="static/images/red-block.png" alt="" width="16" height="16"></div>
-                          </div>
-                      </td>
-                      <td class="sem2">
-                          <div class="sem-blocks"><img src="static/images/grey-blocks.png" alt="" width="56" height="16">
-                              <div class="hide red"><img src="static/images/red-block.png" alt="" width="16" height="16"></div>
-                              <div class="block-2 red"><img src="static/images/red-block.png" alt="" width="16" height="16"></div>
-                          </div>
-                      </td>
-                      <td class="ec">12</td>
-                  </tr>
-                  <tr class="studieschema">
-                      <td><a target="_blank" href="https://studiegids.uva.nl/xmlpages/page/2019-2020/zoek-vak/vak/72970" class="icon-arrow">Programmeerproject</a></td>
-                      <td class="sem1">
-                          <div class="sem-blocks"><img src="static/images/grey-blocks.png" alt="" width="56" height="16">
-                              <div class="hide red"><img src="static/images/red-block.png" alt="" width="16" height="16"></div>
-                              <div class="block-2 red"><img src="static/images/red-block.png" alt="" width="16" height="16"></div>
-                          </div>
-                      </td>
-                      <td class="sem2">
-                          <div class="sem-blocks"><img src="static/images/grey-blocks.png" alt="" width="56" height="16">
-                              <div class="block-2 red"><img src="static/images/red-block.png" alt="" width="16" height="16"></div>
-                              <div class="hide red"><img src="static/images/red-block.png" alt="" width="16" height="16"></div>
-                          </div>
-                      </td>
-                      <td class="ec">6</td>
-                  </tr>
-                  <tr class="studieschema">
-                      <td><a target="_blank" href="https://studiegids.uva.nl/xmlpages/page/2019-2020/zoek-vak/vak/72969" class="icon-arrow">Programmeertheorie</a></td>
-                      <td class="sem1">
-                          <div class="sem-blocks"><img src="static/images/grey-blocks.png" alt="" width="56" height="16">
-                              <div class="block-3 red"><img src="static/images/red-block.png" alt="" width="16" height="16"></div>
-                              <div class="hide red"><img src="static/images/red-block.png" alt="" width="16" height="16"></div>
-                          </div>
-                      </td>
-                      <td class="sem2">
-                          <div class="sem-blocks"><img src="static/images/grey-blocks.png" alt="" width="56" height="16">
-                              <div class="hide red"><img src="static/images/red-block.png" alt="" width="16" height="16"></div>
-                              <div class="block-3 red"><img src="static/images/red-block.png" alt="" width="16" height="16"></div>
-                          </div>
-                      </td>
-                      <td class="ec">6</td>
-                  </tr>
-              </tbody>
-          </table>
-
-          <br>
-            <table>
-                <tbody>
-                  <tr>
-                      <th>Parttime</th>
-                      <th style="width:60px" class="sem1">Sem. 1</th>
-                      <th style="width:60px" class="sem2">Sem. 2</th>
-                      <th style="width:30px" class="ec">EC</th>
-                  </tr>
-
-                    <tr class="studieschema">
-                        <td><a target="_blank" href="https://studiegids.uva.nl/xmlpages/page/2019-2020/zoek-vak/vak/72912" class="icon-arrow">Programmeren 1</a></td>
-                        <td class="sem1">
-                            <div class="sem-blocks"><img src="static/images/grey-blocks.png" alt="" width="56" height="16">
-                                <div class="block-1 red"><img src="static/images/red-block.png" alt="" width="16" height="16"></div>
-                                <div class="hide red"><img src="static/images/red-block.png" alt="" width="16" height="16"></div>
-                            </div>
-                        </td>
-                        <td class="sem2">
-                            <div class="sem-blocks"><img src="static/images/grey-blocks.png" alt="" width="56" height="16">
-                                <div class="hide red"><img src="static/images/red-block.png" alt="" width="16" height="16"></div>
-                                <div class="block-1 red"><img src="static/images/red-block.png" alt="" width="16" height="16"></div>
-                            </div>
-                        </td>
-                        <td class="ec">6</td>
-                    </tr>
-                    <tr class="studieschema">
-                        <td><a target="_blank" href="https://studiegids.uva.nl/xmlpages/page/2019-2020/zoek-vak/vak/72913" class="icon-arrow">Programmeren 2</a></td>
-                        <td class="sem1">
-                            <div class="sem-blocks"><img src="static/images/grey-blocks.png" alt="" width="56" height="16">
-                                <div class="block-2 red"><img src="static/images/red-block.png" alt="" width="16" height="16"></div>
-                                <div class="hide red"><img src="static/images/red-block.png" alt="" width="16" height="16"></div>
-                            </div>
-                        </td>
-                        <td class="sem2">
-                            <div class="sem-blocks"><img src="static/images/grey-blocks.png" alt="" width="56" height="16">
-                                <div class="hide red"><img src="static/images/red-block.png" alt="" width="16" height="16"></div>
-                                <div class="block-2 red"><img src="static/images/red-block.png" alt="" width="16" height="16"></div>
-                            </div>
-                        </td>
-                        <td class="ec">6</td>
-                    </tr>
-                    <tr class="studieschema">
-                        <td><a target="_blank" href="https://studiegids.uva.nl/xmlpages/page/2019-2020/zoek-vak/vak/73052" class="icon-arrow">Web App Studio</a></td>
-                        <td class="sem1">
-                            <div class="sem-blocks"><img src="static/images/grey-blocks.png" alt="" width="56" height="16">
-                                <div class="block-1 red"><img src="static/images/red-block.png" alt="" width="16" height="16"></div>
-                                <div class="hide red"><img src="static/images/red-block.png" alt="" width="16" height="16"></div>
-                            </div>
-                        </td>
-                        <td class="sem2">
-                            <div class="sem-blocks"><img src="static/images/grey-blocks.png" alt="" width="56" height="16">
-                                <div class="hide red"><img src="static/images/red-block.png" alt="" width="16" height="16"></div>
-                                <div class="block-1 red"><img src="static/images/red-block.png" alt="" width="16" height="16"></div>
-                            </div>
-                        </td>
-                        <td class="ec">6</td>
-                    </tr>
-                    <tr class="studieschema">
-                        <td><a target="_blank" href="https://studiegids.uva.nl/xmlpages/page/2019-2020/zoek-vak/vak/72970" class="icon-arrow">Programmeerproject</a></td>
-                        <td class="sem1">
-                            <div class="sem-blocks"><img src="static/images/grey-blocks.png" alt="" width="56" height="16">
-                                <div class="hide red"><img src="static/images/red-block.png" alt="" width="16" height="16"></div>
-                                <div class="block-2 red"><img src="static/images/red-block.png" alt="" width="16" height="16"></div>
-                            </div>
-                        </td>
-                        <td class="sem2">
-                            <div class="sem-blocks"><img src="static/images/grey-blocks.png" alt="" width="56" height="16">
-                                <div class="block-2 red"><img src="static/images/red-block.png" alt="" width="16" height="16"></div>
-                                <div class="hide red"><img src="static/images/red-block.png" alt="" width="16" height="16"></div>
-                            </div>
-                        </td>
-                        <td class="ec">6</td>
-                    </tr>
-                    <tr class="studieschema">
-                        <td><a target="_blank" href="https://studiegids.uva.nl/xmlpages/page/2019-2020/zoek-vak/vak/72969" class="icon-arrow">Programmeertheorie</a></td>
-                        <td class="sem1">
-                            <div class="sem-blocks"><img src="static/images/grey-blocks.png" alt="" width="56" height="16">
-                                <div class="block-3 red"><img src="static/images/red-block.png" alt="" width="16" height="16"></div>
-                                <div class="hide red"><img src="static/images/red-block.png" alt="" width="16" height="16"></div>
-                            </div>
-                        </td>
-                        <td class="sem2">
-                            <div class="sem-blocks"><img src="static/images/grey-blocks.png" alt="" width="56" height="16">
-                                <div class="hide red"><img src="static/images/red-block.png" alt="" width="16" height="16"></div>
-                                <div class="block-3 red"><img src="static/images/red-block.png" alt="" width="16" height="16"></div>
-                            </div>
-                        </td>
-                        <td class="ec">6</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-
-        <div class="col">
-          <div class="slideinfo">
-              <h6>&nbsp &nbsp Fulltime</h6>
-            <!-- <div class="slideinfocontent"> -->
-              <p>De Fulltime Minor Programmeren is een programma van 30 studiepunten dat je in een halfjaar volgt. Je leert eerst uitgebreid de basis van programmeren (en meteen hoe een computer werkt), daarna ga je je specialiseren in het ontwikkelen van webapplicaties. Ondertussen leer je over algoritmen, over teamwork, en over ontwerpen van software. Aanwezigheidsplicht het gehele semester 9–17 uur.</p>
-            <!-- </div> -->
-          </div>
-          <div class="slideinfo">
-              <h6>&nbsp &nbsp Parttime</h6>
-            <!-- <div class="slideinfocontent"> -->
-            <p>We bieden onze vakken ook flexibel aan. Je kunt zo de minor verspreiden over meerdere semesters. Maar je kunt bijvoorbeeld ook alleen het eerste deel van de vakken doen. Dit is een goed alternatief als het je niet lukt om de minor fulltime te doen. Je krijgt meer vrijheid om je tijd in te delen. Let op! Bij de latere vakken zit ook teamwork, dus het is wel belangrijk om flexibel te zijn met je tijdsindeling. Heb je echt weinig tijd, dan zijn onze vakken waarschijnlijk niet voor jou weggelegd.<p>
-            <!-- </div> -->
-            </div>
-        </div>
-      </div>
-      <div class="row" style="width:100%;" id="sc">
-        <div class="col">
-          <h2>Scientific Programming</h2>
-          <!-- <h6>Starting in semester 1</h6> -->
-          <table>
-              <tbody>
-                <tr>
-                    <th>Starting in semester 1 (12 EC)</th>
-                    <th style="width:60px" class="sem1">Sem. 1</th>
-                    <th style="width:60px" class="sem2">Sem. 2</th>
-                    <th style="width:30px" class="ec">EC</th>
-                </tr>
-                  <tr class="studieschema">
-                      <td><a target="_blank" href="https://studiegids.uva.nl/xmlpages/page/2019-2020/zoek-vak/vak/73593" class="icon-arrow">Scientific Programming 1</a></td>
-                      <td class="sem1">
-                          <div class="sem-blocks"><img src="static/images/grey-blocks.png" alt="" width="56" height="16">
-                              <div class="block-1 red"><img src="static/images/red-block.png" alt="" width="16" height="16"></div>
-                              <div class="hide red"><img src="static/images/red-block.png" alt="" width="16" height="16"></div>
-                          </div>
-                      </td>
-                      <td class="sem2">
-                          <div class="sem-blocks"><img src="static/images/grey-blocks.png" alt="" width="56" height="16">
-                              <div class="hide red"><img src="static/images/red-block.png" alt="" width="16" height="16"></div>
-                              <!-- <div class="block-1 red"><img src="static/images/red-block.png" alt="" width="16" height="16"></div> -->
-                          </div>
-                      </td>
-                      <td class="ec">-</td>
-                  </tr>
-                  <tr class="studieschema">
-                      <td><a target="_blank" href="https://studiegids.uva.nl/xmlpages/page/2019-2020/zoek-vak/vak/73594" class="icon-arrow">Scientific Programming 2</a></td>
-                      <td class="sem1">
-                          <div class="sem-blocks"><img src="static/images/grey-blocks.png" alt="" width="56" height="16">
-                              <div class="block-2 red"><img src="static/images/red-block.png" alt="" width="16" height="16"></div>
-                              <!-- <div class="block-1 red"><img src="static/images/red-block.png" alt="" width="16" height="16"></div> -->
-                          </div>
-                      </td>
-                      <td class="sem2">
-                          <div class="sem-blocks"><img src="static/images/grey-blocks.png" alt="" width="56" height="16">
-                              <div class="hide red"><img src="static/images/red-block.png" alt="" width="16" height="16"></div>
-                              <!-- <div class="block-2 red"><img src="static/images/red-block.png" alt="" width="16" height="16"></div> -->
-                          </div>
-                      </td>
-                      <td class="ec">-</td>
-                  </tr>
-                  <tr class="studieschema">
-                      <td><a target="_blank" href="https://studiegids.uva.nl/xmlpages/page/2019-2020/zoek-vak/vak/73053" class="icon-arrow">Data Processing</a></td>
-                      <td class="sem1">
-                          <div class="sem-blocks"><img src="static/images/grey-blocks.png" alt="" width="56" height="16">
-                              <!-- <div class="block-3 red"><img src="static/images/red-block.png" alt="" width="16" height="16"></div> -->
-                              <div class="hide red"><img src="static/images/red-block.png" alt="" width="16" height="16"></div>
-                          </div>
-                      </td>
-                      <td class="sem2">
-                          <div class="sem-blocks"><img src="static/images/grey-blocks.png" alt="" width="56" height="16">
-                            <div class="block-1 red"><img src="static/images/red-block.png" alt="" width="16" height="16"></div>
-                              <div class="block-2 red"><img src="static/images/red-block.png" alt="" width="16" height="16"></div>
-                          </div>
-                      </td>
-                      <td class="ec">-</td>
-                  </tr>
-                  <tr class="studieschema">
-                    <td class="bottomborder"></td>
-                    <td class="bottomborder"></td>
-                    <td class="bottomborder">Total EC</td>
-                    <td class="ec" style="border-bottom: 0px solid darkgrey;">12</td>
-                  </tr>
-              </tbody>
-          </table>
-
-          <table>
-              <tbody>
-                <tr>
-                    <th>Start in sem. 2, small workload (6 EC)</th>
-                    <th style="width:60px" class="sem1">Sem. 1</th>
-                    <th style="width:60px" class="sem2">Sem. 2</th>
-                    <th style="width:30px" class="ec">EC</th>
-                </tr>
-                  <tr class="studieschema">
-                      <td><a target="_blank" href="https://studiegids.uva.nl/xmlpages/page/2019-2020/zoek-vak/vak/73593" class="icon-arrow">Scientific Programming 1</a></td>
-                      <td class="sem1">
-                          <div class="sem-blocks"><img src="static/images/grey-blocks.png" alt="" width="56" height="16">
-                              <!-- <div class="block-3 red"><img src="static/images/red-block.png" alt="" width="16" height="16"></div> -->
-                              <div class="hide red"><img src="static/images/red-block.png" alt="" width="16" height="16"></div>
-                          </div>
-                      </td>
-                      <td class="sem2">
-                          <div class="sem-blocks"><img src="static/images/grey-blocks.png" alt="" width="56" height="16">
-                            <div class="block-1 red"><img src="static/images/red-block.png" alt="" width="16" height="16"></div>
-                              <!-- <div class="block-2 red"><img src="static/images/red-block.png" alt="" width="16" height="16"></div> -->
-                          </div>
-                      </td>
-                      <td class="ec">-</td>
-                  </tr>
-                  <tr class="studieschema">
-                      <td><a target="_blank" href="https://studiegids.uva.nl/xmlpages/page/2019-2020/zoek-vak/vak/73594" class="icon-arrow">Scientific Programming 2</a></td>
-                      <td class="sem1">
-                          <div class="sem-blocks"><img src="static/images/grey-blocks.png" alt="" width="56" height="16">
-                              <!-- <div class="block-3 red"><img src="static/images/red-block.png" alt="" width="16" height="16"></div> -->
-                              <div class="hide red"><img src="static/images/red-block.png" alt="" width="16" height="16"></div>
-                          </div>
-                      </td>
-                      <td class="sem2">
-                          <div class="sem-blocks"><img src="static/images/grey-blocks.png" alt="" width="56" height="16">
-                            <!-- <div class="block-1 red"><img src="static/images/red-block.png" alt="" width="16" height="16"></div> -->
-                              <div class="block-2 red"><img src="static/images/red-block.png" alt="" width="16" height="16"></div>
-                          </div>
-                      </td>
-                      <td class="ec">-</td>
-                  </tr>
-                  <tr class="studieschema">
-                    <td class="bottomborder"></td>
-                    <td class="bottomborder"></td>
-                    <td class="bottomborder">Total EC</td>
-                    <td class="ec" style="border-bottom: 0px solid darkgrey;">6</td>
-                  </tr>
-              </tbody>
-          </table>
-          <!-- <h6>Starting in semester 1, big workload</h6> -->
-          <table>
-              <tbody>
-                <tr>
-                    <th>Start in sem. 1, big workload (12)</th>
-                    <th style="width:60px" class="sem1">Sem. 1</th>
-                    <th style="width:60px" class="sem2">Sem. 2</th>
-                    <th style="width:30px" class="ec">EC</th>
-                </tr>
-                  <tr class="studieschema">
-                      <td><a target="_blank" href="https://studiegids.uva.nl/xmlpages/page/2019-2020/zoek-vak/vak/73593" class="icon-arrow">Scientific Programming 1</a></td>
-                      <td class="sem1">
-                          <div class="sem-blocks"><img src="static/images/grey-blocks.png" alt="" width="56" height="16">
-                              <!-- <div class="block-3 red"><img src="static/images/red-block.png" alt="" width="16" height="16"></div> -->
-                              <div class="hide red"><img src="static/images/red-block.png" alt="" width="16" height="16"></div>
-                          </div>
-                      </td>
-                      <td class="sem2">
-                          <div class="sem-blocks"><img src="static/images/grey-blocks.png" alt="" width="56" height="16">
-                            <div class="block-1 red"><img src="static/images/red-block.png" alt="" width="16" height="16"></div>
-                              <!-- <div class="block-2 red"><img src="static/images/red-block.png" alt="" width="16" height="16"></div> -->
-                          </div>
-                      </td>
-                      <td class="ec">-</td>
-                  </tr>
-                  <tr class="studieschema">
-                      <td><a target="_blank" href="https://studiegids.uva.nl/xmlpages/page/2019-2020/zoek-vak/vak/73594" class="icon-arrow">Scientific Programming 2</a></td>
-                      <td class="sem1">
-                          <div class="sem-blocks"><img src="static/images/grey-blocks.png" alt="" width="56" height="16">
-                              <!-- <div class="block-3 red"><img src="static/images/red-block.png" alt="" width="16" height="16"></div> -->
-                              <div class="hide red"><img src="static/images/red-block.png" alt="" width="16" height="16"></div>
-                          </div>
-                      </td>
-                      <td class="sem2">
-                          <div class="sem-blocks"><img src="static/images/grey-blocks.png" alt="" width="56" height="16">
-                            <!-- <div class="block-1 red"><img src="static/images/red-block.png" alt="" width="16" height="16"></div> -->
-                              <div class="block-1 red"><img src="static/images/red-block.png" alt="" width="16" height="16"></div>
-                          </div>
-                      </td>
-                      <td class="ec">-</td>
-                  </tr>
-                  <tr class="studieschema">
-                      <td><a target="_blank" href="https://studiegids.uva.nl/xmlpages/page/2019-2020/zoek-vak/vak/73053" class="icon-arrow">Data Processing</a></td>
-                      <td class="sem1">
-                          <div class="sem-blocks"><img src="static/images/grey-blocks.png" alt="" width="56" height="16">
-                              <!-- <div class="block-3 red"><img src="static/images/red-block.png" alt="" width="16" height="16"></div> -->
-                              <div class="hide red"><img src="static/images/red-block.png" alt="" width="16" height="16"></div>
-                          </div>
-                      </td>
-                      <td class="sem2">
-                          <div class="sem-blocks"><img src="static/images/grey-blocks.png" alt="" width="56" height="16">
-                            <!-- <div class="block-1 red"><img src="static/images/red-block.png" alt="" width="16" height="16"></div> -->
-                              <div class="block-2 red"><img src="static/images/red-block.png" alt="" width="16" height="16"></div>
-                          </div>
-                      </td>
-                      <td class="ec">-</td>
-                  </tr>
-                  <tr class="studieschema">
-                    <td class="bottomborder"></td>
-                    <td class="bottomborder"></td>
-                    <td class="bottomborder">Total EC</td>
-                    <td class="ec" style="border-bottom: 0px solid darkgrey;">12</td>
-                  </tr>
-              </tbody>
-          </table>
-
-        </div>
-        <div class="col">
-          <div class="slideinfo selected">
-              <h6>&nbsp &nbsp   Programme</h6>
-            <div class="slideinfocontent">
-              <p>Note that this course is not part of and cannot be combined with the Programming Minor.</p>
-              <p>We’ll introduce you to Python using a selection of scientific applications, from the fields of physics, biology, artificial intelligence, sociology and more. Current modules include:</p>
-              <ul>
-                <li>Number theory</li>
-                <li>Text processing and analysis</li>
-                <li>Numeric integration</li>
-                <li>Population dynamics</li>
-                <li>Monopoly game simulation</li>
-                <li>Climate data analysis</li>
-              </ul>
-              <p>Scientific Programming 2 focuses on teaching you “the rest of Python” so you will be ready to read other scientists’ code and contribute to open source projects. Do have a look at <a href="https://sp1.mprog.nl/modules">https://sp1.mprog.nl/modules</a> and <a href="https://sp2.mprog.nl/modules">https://sp2.mprog.nl/modules</a> to see what these courses are all about!</p>
-            </div>
-          </div>
-          <div class="slideinfo">
-              <h6>&nbsp &nbsp  Data processing</h6>
-            <div class="slideinfocontent">
-              <p>Building on your experience with solving problems in Python, you’ll learn about working with larger or unstructured datasets and gain insights by summarizing, filtering and modeling. We’ll help you master the basic techniques and then you will devise your own project, taking a dataset of your choosing, formulate a scientific question and try to answer it using computational techniques.</p>
-            </div>
-            </div>
-        </div>
-      </div>
-      <div class="row" style="width:100%;" id="ai">
-        <div class="col">
-          <h2>Minor Artificial Intelligence</h2>
-          <p style="font-size: 18px;">Programma</p>
-          <h1>TODO</h1>
-        </div>
-        <div class="col">
-          <div class="slideinfo">
-              <h6>&nbsp &nbsp Informatie...</h6>
-          </div>
-          <div class="slideinfo">
-              <h6>&nbsp &nbsp Aanmelden en toelating</h6>
-            <div class="slideinfocontent">
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row" style="width:100%;" id="is">
-        <div class="col">
-          <h2>Minor Information systems</h2>
-          <p style="font-size: 18px;">Programma</p>
-          <table>
-            <tbody>
-                <tr>
-                    <th></th>
-                    <th style="width:60px" class="sem1">Sem. 1</th>
-                    <th style="width:60px" class="sem2">Sem. 2</th>
-                    <th style="width:30px" class="ec">EC</th>
-                </tr>
-                <tr class="studieschema">
-                    <td><a target="_blank" href="https://studiegids.uva.nl/xmlpages/page/2019-2020/zoek-vak/vak/73116" class="icon-arrow">Informatiekunde in Vogelvlucht</a></td>
-                    <td class="sem1">
-                        <div class="sem-blocks"><img src="static/images/grey-blocks.png" alt="" width="56" height="16">
-                            <div class="block-1 red"><img src="static/images/red-block.png" alt="" width="16" height="16"></div>
-                        </div>
-                    </td>
-                    <td class="sem2">
-                        <div class="sem-blocks"><img src="static/images/grey-blocks.png" alt="" width="56" height="16">
-                            <div class="hide red"><img src="static/images/red-block.png" alt="" width="16" height="16"></div>
-                        </div>
-                    </td>
-                    <td class="ec">6</td>
-                </tr>
-                <tr class="studieschema">
-                    <td><a target="_blank" href="https://studiegids.uva.nl/xmlpages/page/2019-2020/zoek-vak/vak/72961" class="icon-arrow">Programmeren IK</a></td>
-                    <td class="sem1">
-                        <div class="sem-blocks"><img src="static/images/grey-blocks.png" alt="" width="56" height="16">
-                            <div class="block-1 red"><img src="static/images/red-block.png" alt="" width="16" height="16"></div>
-                        </div>
-                    </td>
-                    <td class="sem2">
-                        <div class="sem-blocks"><img src="static/images/grey-blocks.png" alt="" width="56" height="16">
-                            <div class="hide red"><img src="static/images/red-block.png" alt="" width="16" height="16"></div>
-                        </div>
-                    </td>
-                    <td class="ec">6</td>
-                </tr>
-                <tr class="studieschema">
-                    <td><a target="_blank" href="https://studiegids.uva.nl/xmlpages/page/2019-2020/zoek-vak/vak/72958" class="icon-arrow">Netwerkanalyse</a></td>
-                    <td class="sem1">
-                        <div class="sem-blocks"><img src="static/images/grey-blocks.png" alt="" width="56" height="16">
-                            <div class="block-2 red"><img src="static/images/red-block.png" alt="" width="16" height="16"></div>
-                        </div>
-                    </td>
-                    <td class="sem2">
-                        <div class="sem-blocks"><img src="static/images/grey-blocks.png" alt="" width="56" height="16">
-                            <div class="hide red"><img src="static/images/red-block.png" alt="" width="16" height="16"></div>
-                        </div>
-                    </td>
-                    <td class="ec">6</td>
-                </tr>
-                <tr class="studieschema">
-                    <td><a target="_blank" href="https://studiegids.uva.nl/xmlpages/page/2019-2020/zoek-vak/vak/73117" class="icon-arrow">Onderzoek van Interactieve Systemen</a></td>
-                    <td class="sem1">
-                        <div class="sem-blocks"><img src="static/images/grey-blocks.png" alt="" width="56" height="16">
-                            <div class="block-2 red"><img src="static/images/red-block.png" alt="" width="16" height="16"></div>
-                        </div>
-                    </td>
-                    <td class="sem2">
-                        <div class="sem-blocks"><img src="static/images/grey-blocks.png" alt="" width="56" height="16">
-                            <div class="hide red"><img src="static/images/red-block.png" alt="" width="16" height="16"></div>
-                        </div>
-                    </td>
-                    <td class="ec">6</td>
-                </tr>
-                <tr class="studieschema studieschemagroup result">
-                    <td><a class="icon-arrow" href="#">Gebonden keuze: Constrained choice</a></td>
-                    <td class="sem1">
-                        <div class="sem-blocks"><img src="static/images/grey-blocks.png" alt="" width="56" height="16">
-                            <div class="block-3 yellow"><img src="static/images/yellow-block.png" alt="" width="16" height="16"></div>
-                        </div>
-                    </td>
-                    <td class="sem2">
-                        <div class="sem-blocks"><img src="static/images/grey-blocks.png" alt="" width="56" height="16">
-                            <div class="hide yellow"><img src="static/images/yellow-block.png" alt="" width="16" height="16"></div>
-                        </div>
-                    </td>
-                    <td class="ec">6</td>
-                </tr>
-                <tr class="studieschemagroup slideout" style="display:none;">
-                    <td colspan="4">
-                        <div class="item-info">
-                            <table>
-                                <tbody>
-                                    <tr class="studieschema">
-                                        <td><a target="_blank" href="https://studiegids.uva.nl/xmlpages/page/2019-2020/zoek-vak/vak/72947" class="icon-arrow">Cognitie en Perceptie</a></td>
-                                        <td class="sem1">
-                                            <div class="sem-blocks"><img src="static/images/grey-blocks.png" alt="" width="56" height="16">
-                                                <div class="block-3 red"><img src="static/images/red-block.png" alt="" width="16" height="16"></div>
-                                            </div>
-                                        </td>
-                                        <td class="sem2">
-                                            <div class="sem-blocks"><img src="static/images/grey-blocks.png" alt="" width="56" height="16">
-                                                <div class="hide red"><img src="static/images/red-block.png" alt="" width="16" height="16"></div>
-                                            </div>
-                                        </td>
-                                        <td class="ec">6</td>
-                                    </tr>
-                                    <tr class="studieschema">
-                                        <td><a target="_blank" href="https://studiegids.uva.nl/xmlpages/page/2019-2020/zoek-vak/vak/73374" class="icon-arrow">Webprogrammeren en Databases voor IK</a></td>
-                                        <td class="sem1">
-                                            <div class="sem-blocks"><img src="static/images/grey-blocks.png" alt="" width="56" height="16">
-                                                <div class="block-3 red"><img src="static/images/red-block.png" alt="" width="16" height="16"></div>
-                                            </div>
-                                        </td>
-                                        <td class="sem2">
-                                            <div class="sem-blocks"><img src="static/images/grey-blocks.png" alt="" width="56" height="16">
-                                                <div class="hide red"><img src="static/images/red-block.png" alt="" width="16" height="16"></div>
-                                            </div>
-                                        </td>
-                                        <td class="ec">6</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        </div>
-        <div class="col">
-          <div class="slideinfo">
-            <p>  Deze minor is met name geschikt voor studenten zonder achtergrond in informatietechnologie, maar met interesse in de methodes en technieken die achter vele hedendaagse informatietoepassingen liggen variërend van zoekmachines, tot sociale netwerk websites.
-            </p><strong> Leerdoelen </strong>
-            <p>
-              In deze minor leer je de basismethoden en technieken die ten grondslag liggen aan vele populaire toepassingen die content creëren. Je leert wat technologisch wel en niet mogelijk is en wat hiermee gecreëerd kan worden. Je leert hoe verschillende aspecten van het samenspel tussen mensen en technologie in hun werk gaan.
-            </p>
-              <h6>&nbsp &nbsp Doelgroepen</h6>
-              <div class="slideinfocontent">
-                <p>  Voor studenten uit de richtingen communicatiewetenschap en nieuwe media en digitale cultuur zijn er belangrijke raakvlakken met hun major. Voor studenten uit de informatiewetenschappen vormt deze minor de mogelijkheid om kennis te maken met het vakgebied van de Informatiekunde.</p>
-              </div>
-          </div>
-          <div class="slideinfo">
-              <h6>&nbsp &nbsp Aanmelden en toelating</h6>
-            <div class="slideinfocontent">
-              <div class="inner-spacer">
-
-                <p>Afhankelijk van je situatie moet je een aantal stappen nemen om je volledig in te schrijven voor de minor of voor losse vakken. Lees dus goed wat jij moet doen om je aan te melden voor deze minor:
-                </p>
-                <p><b>Toelating</b>:
-                </p>
-                <ol class="decimal-outside">
-                    <li>Voor toelating tot de minor zijn dezelfde toelatingseisen van kracht als voor de <a href="http://studiegids.uva.nl/xmlpages/page/2018-2019/zoek-opleiding/opleiding/5291" target="_blank">bacheloropleiding Informatiekunde</a>. Let op dat dit dus Wiskunde op VWO niveau inhoudt.</li>
-                    <li>Vraag toestemming bij je hoofdopleiding voordat je daadwerkelijk begint. Bij sommige opleidingen mag je onze vakken namelijk niet in je vakkenpakket opnemen. De studieadviseur van je eigen opleiding kan je hierbij helpen.</li>
-                    <li>Neem contact op met mw. dr. <a href="mailto:J.A.C.Sandberg@uva.nl" target="_blank">J.A.C. Sandberg</a>, coördinator van de minor om te checken of je wel/niet toelaatbaar bent tot de minor. &nbsp;&nbsp;</li>
-                </ol>
-                <p>
-                </p>
-                <p><b>Aanmelding</b>:
-                </p>
-                <ol class="decimal-outside">
-                    <li>Zorg dat je volledig bent ingeschreven voor je eigen opleiding en dat je je collegegeld betaald hebt. Dat geldt bij de UvA, maar ook als je elders studeert.</li>
-                    <li><i>Aanmelden als bijvakstudent</i>; Studenten van buiten de UvA moeten zich, voorafgaand aan de inschrijving bij de opleiding, eerst als bijvakstudent voor de opleiding "Informatiekunde (c bijvak)" registreren via&nbsp;<a href="http://info.studielink.nl/nl/studenten/Pages/Default.aspx" target="_blank">Studielink</a>. Zie het 'stappenplan aanmelden bijvak' op de <a href="http://www.uva.nl/onderwijs/overig-onderwijs/bijvakken/bijvakken.html" target="_blank">UvA bijvak-pagina</a> voor meer informatie. Voor de toelating tot de Minor Information Systems zijn dezelfde toelatingseisen van kracht als voor de bacheloropleiding Informatiekunde. Let op dat dit Wiskunde B op VWO niveau inhoudt.</li>
-                    <li>Zodra de vakaanmelding is geopend, moet je je officieel in SIS inschrijven voor de minor zelf (als je van plan bent de hele minor te doen). De website hiervoor is&nbsp;<a href="http://www.uva.nl/vakaanmelden" target="_blank">http://www.uva.nl/vakaanmelden</a>.&nbsp;</li>
-                    <li>Meld je vervolgens op dezelfde website aan voor alle individuele vakken die je gaat volgen. Aanmelding voor elk vak is inclusief tentamen en eventueel hertentamen. De juiste vakcodes vind je in de studiegids.</li>
-                    <li>Mocht je problemen hebben bij het aanmelden voor de vakken stuur dan tijdens de aanmeldingsperiode een mail naar&nbsp;<a href="mailto:vakaanmelding-fnwi@uva.nl" target="_blank">vakaanmelding-fnwi@uva.nl</a>. Ga naar&nbsp;<a href="http://student.uva.nl/ifk/az/item/vakaanmelding.html" target="_blank">deze</a>&nbsp;pagina voor meer informatie over de vakaanmelding (inclusief de aanmeldingsperiode).</li>
-                </ol>
-                <p>
-                </p>
-                <p>Roosters zijn te vinden via&nbsp;<a href="https://datanose.nl/" target="_blank">DataNose.</a></p>
-            </div>
-            </div>
-          </div>
-        </div>
-      </div>
+    <div class="topnav" id="nav">
+      <img src="static/images/logo.png" alt="">
+      <a class="active" href="#nav">Overzicht</a>
+      <a href="#">Aanmelden</a>
     </div>
 
-    <div class="container-fluid" style="position:relative;" id="containerbelow">
+
+    <div class="container-fluid" style="position:relative;" id="overzicht">
       <div class="nav"></div>
       <div class="row">
         <div class="wrapper">
@@ -813,247 +30,199 @@
             <div class="card" id="programmeren">
               <img class="card-img-top" src="static/images/programmingminor.png" alt="Card image cap" onclick="showinfo('programmereninfo')">
               <div class="card-body">
-                <hr>
                 <div class="minor-title">
                   <h5 class="card-title">Minor Programmeren</h5>
                 </div>
+                <hr>
                 <div class="minor-description">
-                  <button type="button" class="btn btn-light" name="button" onclick="showinfo('programmereninfo')">Programma</button>
-
-                  <p>Schrijf je eigen programma's en hulpmiddelen en bouw je eigen websites.</p>
-
+                  <!-- <button type="button" class="btn btn-light" name="button" onclick="showinfo('programmereninfo')">Programma</button> -->
+                  <p>Schrijf programma's, maak data inzichtelijk en bouw je eigen websites.</p>
                 </div>
-
-                  <!-- <p class="card-text">
-                  Voor studenten uit elk vakgebied, met en zonder ervaring, om te leren zelf
-                  programma’s te schrijven. Websites voor het grote publiek, of juist om specialistische kennis over te dragen; snel zelfgeschreven hulpmiddelen waarmee
-                  je grote hoeveelheden data verwerkt of om efficiënt enqueteresultaten te
-                  verzamelen. Je kunt het allemaal leren.
-                </p> -->
               </div>
-
-
               <ul class="list-group list-group-flush">
                 <li class="list-group-item">
                   <h6>30 EC</h6>
                 </li>
                 <li class="list-group-item">
-                  Voor studenten uit elk vakgebied.
+                  <p>&bull; Voor studenten uit elk vakgebied</p>
+                  <p>&bull; Fulltime of parttime</p>
+                  <p>&bull; Semester 1 of 2</p>
+                  <p>&bull; Nederlandstalig</p>
                 </li>
-                <li class="list-group-item">
-                  <p>&#10003; Fulltime</p>
-                    <p>&#10003; <span style="font-weight:600;">Parttime</span></p>
-                </li>
-                <!-- <li class="list-group-item">
-                  <p>&#10003; Semester 1</p>
-                  <p>&#10003; Semester 2</p>
-                </li> -->
-                <li class="list-group-item">Nog meer info...</li>
               </ul>
-              <div class="card-body">
-                <a target="_blank" href="https://studiegids.uva.nl/xmlpages/page/2019-2020/zoek-minor/opleiding/5722" target="_blank" class="card-link">Studiegids</a>
-                <a href="#" class="card-link">Link</a>
-              </div>
+              <a target="_blank" href="https://studiegids.uva.nl/xmlpages/page/2019-2020/zoek-minor/opleiding/5722" target="_blank" class="card-link">Studiegids</a>
             </div>
+
+
+              <div class="card" id="scientific">
+                <!-- <img class="card-img-top" src="static/images/science.png" alt="Card image cap" onclick="showinfo('sc')"> -->
+                <div class="card-body">
+                  <div class="minor-title">
+                      <h5 class="card-title">Scientific Programming (EN)</h5>
+                      <hr>
+                  </div>
+                  <!-- <hr> -->
+                  <div class="minor-description">
+                    <!-- <button type="button" class="btn btn-light" name="button" onclick="showinfo('sc')">Programma</button> -->
+                    <p>Programmeren en dataverwerking in Python, voor wetenschappelijke toepassing.</p>
+                  </div>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">
+                    <h6>12 EC</h6>
+                  </li>
+                  <li class="list-group-item">
+                    <p>&bull; Voor alle studenten</p>
+                    <p>&bull; Geen ervaring nodig</p>
+                    <p>&bull; Parttime</p>
+                    <p>&bull; Semester 1 of 2</p>
+                    <p>&bull; Engelstalig</p>
+                  </li>
+                </ul>
+                <a href="https://www.mprog.nl/scientific/" target="_blank" class="card-link">Studiegids (TODO)</a>
+              </div>
+
           </div>
           <div class="col">
-            <div class="card" id="scientific">
-              <img class="card-img-top" src="static/images/science.png" alt="Card image cap" onclick="showinfo('sc')">
+            <div class="card" id="computational">
+              <img class="card-img-top" src="static/images/computational.png" alt="Card image cap" onclick="showinfo('cls')">
               <div class="card-body">
-                <hr>
                 <div class="minor-title">
-                    <h5 class="card-title">Scientific Programming (EN)</h5>
+                  <h5 class="card-title">Minor Computational Science</h5>
                 </div>
+                <hr>
                 <div class="minor-description">
-                  <button type="button" class="btn btn-light" name="button" onclick="showinfo('sc')">Programma</button>
-
-                  <p>Programmeren in Python, gericht op wetenschappelijke applicaties. </p>
-
+                <!-- <button type="button" class="btn btn-light" name="button" onclick="showinfo('cls')">Programma</button> -->
+                <p>Maak modellen en simulaties van complexe systemen met hulp van wiskunde en programmeren.</p>
                 </div>
-
               </div>
               <ul class="list-group list-group-flush">
                 <li class="list-group-item">
-                  <h6>12 EC</h6>
+                  <h6>30 EC</h6>
                 </li>
                 <li class="list-group-item">
-                  Voor studenten met een wetenschappelijke achtergrond.
+                  <p>&bull; Vooral voor bètastudenten</p>
+                  <p>&bull; Fulltime</p>
+                  <p>&bull; Geen ervaring nodig</p>
+                  <p>&bull; Semester 1</p>
+                  <p>&bull; Nederlandstalig</p>
                 </li>
-                <li class="list-group-item">
-                  <p>&#10003; Fulltime</p>
-                  <p>&#10003; <span style="font-weight:600;">Parttime</span></p>
-                </li>
-                <!-- <li class="list-group-item">
-                  <p>&#10003; Semester 1</p>
-                  <p>&#10003; Semester 2</p>
-                </li> -->
-                <li class="list-group-item">Nog meer info...</li>
               </ul>
-              <div class="card-body">
-                <a href="https://www.mprog.nl/scientific/" target="_blank" class="card-link">Studiegids (TODO)</a>
-                <a href="#" class="card-link">Link</a>
-              </div>
+              <a target="_blank" href="https://studiegids.uva.nl/xmlpages/page/2019-2020/zoek-minor/opleiding/5718" target="_blank" class="card-link">Studiegids</a>
             </div>
           </div>
           <div class="col">
             <div class="card" id="AI">
               <img class="card-img-top" src="static/images/AI.png" alt="Card image cap" onclick="showinfo('ai')">
               <div class="card-body">
-                <hr>
                 <div class="minor-title">
                   <h5 class="card-title">Minor Artificial intelligence (NL)</h5>
                 </div>
-                  <div class="minor-description">
-                <button type="button" class="btn btn-light" name="button" onclick="showinfo('ai')">Programma</button>
-
-                <p>Voor 25 personen... TODO</p>
-              </div>
-
-              </div>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">
-                  <h6>30 EC</h6>
-                </li>
-                <li class="list-group-item">
-                  Voor studenten van ...
-                </li>
-                <li class="list-group-item">
-                  <p>&#10003; Fulltime</p>
-                  <p>&#10007; Parttime</p>
-                </li>
-                <!-- <li class="list-group-item">
-                  <p>&#10003; Semester 1 ?</p>
-                  <p>&#10003; Semester 2 ?</p>
-                </li> -->
-                <li class="list-group-item">Nog meer info...</li>
-              </ul>
-              <div class="card-body">
-                <a href="#" class="card-link">Studiegids (TODO)</a>
-                <a href="#" class="card-link">Link</a>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card" id="computational">
-              <img class="card-img-top" src="static/images/computational.png" alt="Card image cap" onclick="showinfo('cls')">
-              <div class="card-body">
                 <hr>
-                <div class="minor-title">
-                  <h5 class="card-title">Minor Computational Science</h5>
-                </div>
-                <div class="minor-description">
-                <button type="button" class="btn btn-light" name="button" onclick="showinfo('cls')">Programma</button>
-                <p>Programmeer computermodellen en simulaties van complexe problemen.</p>
-                </div>
+                  <div class="minor-description">
+                <!-- <button type="button" class="btn btn-light" name="button" onclick="showinfo('ai')">Programma</button> -->
+                <p>Ontwerp en implementeer toepassingen van machine learning in Python.</p>
+              </div>
+
               </div>
               <ul class="list-group list-group-flush">
                 <li class="list-group-item">
                   <h6>30 EC</h6>
                 </li>
                 <li class="list-group-item">
-                  Interessant voor bètastudenten.
+                  <p>&bull; Voor alle studenten</p>
+                  <p>&bull; Maximaal 25 studenten</p>
+                  <p>&bull; Fulltime</p>
+                  <p>&bull; Semester 1 of 2</p>
                 </li>
-                <li class="list-group-item">
-                  <p>&#10003; Fulltime</p>
-                  <p>&#10007; Parttime</p>
-                </li>
-                <!-- <li class="list-group-item">
-                  <p>&#10003; Semester 1</p>
-                  <p>&#10007; Semester 2</p>
-                </li> -->
-                <li class="list-group-item">Nog meer info...</li>
               </ul>
-              <div class="card-body">
-                <a target="_blank" href="https://studiegids.uva.nl/xmlpages/page/2019-2020/zoek-minor/opleiding/5718" target="_blank" class="card-link">Studiegids</a>
-                <a href="#" class="card-link">Link</a>
-              </div>
+              <a href="#" class="card-link">Studiegids (TODO)</a>
             </div>
+
+
+
+            <div class="card" id="KI">
+              <div class="card-body">
+                <div class="minor-title">
+                  <h6 class="card-title">Minor Kunstmatige Intelligentie </h6>
+                  <h6>30 EC</h6>
+                  <hr>
+                </div>
+                  <div class="minor-description">
+                <p>Ontwerp en implementeer toepassingen van machine learning in Python.</p>
+              </div>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <p>&bull; Voor alle studenten</p>
+                  <p>&bull; Maximaal 25 studenten</p>
+                  <p>&bull; Fulltime</p>
+                  <p>&bull; Semester 1 of 2</p>
+                </li>
+              </ul>
+              <!-- <a href="#" class="card-link">Studiegids (TODO)</a> -->
+              <!-- <a href="#"></a> -->
+            </div>
+
+            <div class="card" id="datascience">
+              <div class="card-body">
+                <div class="minor-title">
+                  <h6 class="card-title">Minor Data Science</h6>
+                  <h6>30 EC</h6>
+                  <hr>
+                  <!-- <a href="#" class="card-link">Studiegids (TODO)</a> -->
+                </div>
+                  <div class="minor-description">
+                <p>Maak diepgaand kennis met technieken uit data science en kunstmatige intelligentie.</p>
+              </div>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <p>&bull; Programmeerervaring nodig</p>
+                  <p>&bull; Goed bekend met statistiek</p>
+                  <p>&bull; Fulltime</p>
+                  <p>&bull; Semester 1</p>
+                  <p>&bull; Engelstalig</p>
+                </li>
+              </ul>
+            </div>
+
           </div>
           <div class="col">
-          <div class="card" id="informationsystems">
+            <div class="card" id="informationsystems">
             <img class="card-img-top" src="static/images/informationsystems.png" alt="Card image cap" onclick="showinfo('is')">
             <div class="card-body">
-              <hr>
               <div class="minor-title">
                   <h5 class="card-title">Minor Information Systems</h5>
               </div>
+              <hr>
               <div class="minor-description">
-
-              <button type="button" class="btn btn-light" name="button" onclick="showinfo('is')">Programma</button>
-
-              <p>Bestuderen van het creëren, onderhouden, en ontsluiten van informatie.</p>
+                <!-- <button type="button" class="btn btn-light" name="button" onclick="showinfo('is')">Programma</button> -->
+                <p>Een uitgebreide inleiding in de informatiekunde met aandacht voor toepassingen en programmeren.</p>
               </div>
-              </div>
+            </div>
             <ul class="list-group list-group-flush">
               <li class="list-group-item">
                 <h6>30 EC</h6></li>
                 <li class="list-group-item">
-                  Interessant voor studenten met een achtergrond in communicatiewetenschap,
-                  nieuwe media, cultuur en informatiewetenschappen.
+                <p>&bull; Voor alle studenten</p>
+                <p>&bull; Geen ervaring nodig</p>
+                <p>&bull; Fulltime</p>
+                <p>&bull; Semester 1</p>
+                <p>&bull; Nederlandstalig</p>
                 </li>
-              <li class="list-group-item">
-                <p>&#10003; Fulltime</p>
-                <p>&#10007; Parttime</p>
-              </li>
-              <!-- <li class="list-group-item">
-                <p>&#10003; Semester 1</p>
-                <p>&#10003; Semester 2</p>
-              </li> -->
-              <!-- <li class="list-group-item">
-                <p>Nog meer info...</p>
-              </li> -->
             </ul>
-            <div class="card-body">
-              <a target="_blank" href="https://studiegids.uva.nl/xmlpages/page/2019-2020/zoek-minor/opleiding/5818" target="_blank" class="card-link">Studiegids</a>
-              <a href="#" class="card-link">Link</a>
-            </div>
-          </div>
-        </div>
-        </div>
-        <div class="col" id="overigcol">
-          <div class="card" id="overig">
-            <div class="card-body">
-              <h5 class="card-title">Overige minoren</h5>
-              <p class="card-text"></p>
-            </div>
-            <ul class="list-group list-group-flush">
+            <a target="_blank" href="https://studiegids.uva.nl/xmlpages/page/2019-2020/zoek-minor/opleiding/5818" target="_blank" class="card-link">Studiegids</a>
+          </div></div>
 
-              <li class="list-group-item">
-
-                <h6><span class="dot"></span> Minor KI</h6>
-                <p>Dit programma bestaat uit keuzevakken van de bachelor KI.</p>
-                <a href="#" class="card-link">Studiegids</a>
-              </li>
-              <li class="list-group-item">
-                <h6><span class="dot"></span> Minor Informatica</h6>
-                <p>Deze minor is bedoeld voor mensen met een stevige basis in wiskunde.
-                  Het programma bestaat uit vakken van de bachelor Informatica.
-                </p>
-                <a href="#" class="card-link">Studiegids</a>
-              </li>
-              <li class="list-group-item">
-                <h6><span class="dot"></span> Minor Logic ad Computation</h6>
-                <p>Deze minor is voor mensen met een goede basis in de logica.
-                </p>
-                <a href="#" class="card-link">Studiegids</a>
-              </li>
-              <li class="list-group-item">
-                <h6><span class="dot"></span> Minor Data Science</h6>
-                <p>Voor mensen die ervaring hebben met Python en goed bekend zijn met statistiek.
-                </p>
-                <a href="#" class="card-link">Studiegids</a>
-              </li>
-            </ul>
-          </div>
         </div>
       </div>
     </div>
-    <!-- </div> -->
 
     <!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script> -->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="static/js/moreinfo.js"></script>
+    <!-- <script type="text/javascript" src="static/js/moreinfo.js"></script> -->
   </body>
 </html>
