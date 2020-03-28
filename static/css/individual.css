@@ -1,3 +1,6 @@
+#programmeren, #computational, #informationsystems, #AI {
+  height: 50%;
+}
 
 #programmeren .minor-title {
   /* margin-bottom: 40px; */
@@ -62,7 +65,7 @@
   cursor: pointer;
   color: white;
   font-weight: 500;
-  // margin-left: 6px;
+  margin-left: 6px;
 }
 
 #above h2 {
