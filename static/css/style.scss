@@ -1,4 +1,4 @@
-$bgcolor: #181818;
+$bgcolor: rgb(24, 24, 24);
 $divheight: 130px;
 
 
@@ -9,7 +9,6 @@ body, html {
   height: 101%;
   // font-family: Georgia, serif;
 }
-
 
 .topnav {
   background-color: $bgcolor;
@@ -141,6 +140,7 @@ table a {
 }
 
 .row {
+  width: 100%;
   z-index: 10;
   margin: auto;
   padding: 2.5%;
@@ -297,8 +297,18 @@ td {
 }
 
 h5 {
-  font-size: 17px;
+  font-size: 16px;
+  margin: -10px;
+  padding:0;
+  text-align: center;
 }
+
+h6 {
+  text-align: center;
+  line-height: 15px;
+}
+
+
 
 .center {
   text-align: center;

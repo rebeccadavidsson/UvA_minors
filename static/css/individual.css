@@ -1,5 +1,5 @@
-#programmeren, #computational, #informationsystems, #AI {
-  height: 50%;
+#programmeren, #computational, #informationsystems, #AI, #scientific {
+  height: 450px;
 }
 
 #programmeren .minor-title {
@@ -88,4 +88,8 @@
 
 #datascience p, #KI p {
   font-size: 12px;
+}
+
+#datascience {
+  margin-bottom: 20px;
 }

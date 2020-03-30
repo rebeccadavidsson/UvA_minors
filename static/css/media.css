@@ -1,8 +1,20 @@
+@media only screen and (max-width: 1107px) {
+  h5 {
+    font-size: 13px;
+  }
+}
+
 
 @media only screen and (max-width: 800px) {
 
   html, body {
     background-color: $bgcolor;
+  }
+
+  h5 {
+    font-size: 17px;
+    margin: 0px;
+    line-height: 1px;
   }
 
   #overzicht .card {
@@ -16,10 +28,7 @@
 
   .wrapper {
     display: block;
-  }
-
-  hr {
-    display: none;
+    width: 100%;
   }
 
   .card:hover {
